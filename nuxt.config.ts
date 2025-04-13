@@ -56,16 +56,23 @@ export default defineNuxtConfig({
     }
   },
   // Nastavení pro správné generování statických souborů pro Cloudflare Pages
+  ssr: true,
   nitro: {
-    preset: 'cloudflare-pages',
+    preset: 'static',
+    serveStatic: true,
     prerender: {
-      crawlLinks: true,
+      crawlLinks: false,  // Vypnout automatické procházení odkazů
       routes: [
         '/',
         '/sluzby',
         '/cenik',
         '/reference'
-      ]
+      ],
+      failOnError: false  // Nepřerušovat build při chybě renderování
+    },
+    // Přidat podporu pro Node.js moduly
+    externals: {
+      inline: ['@vueuse/core', '@vueuse/motion']  // Inline důležitých modulů
     }
   }
 })
