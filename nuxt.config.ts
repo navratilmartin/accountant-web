@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@unocss/nuxt',
-    // Removing '@nuxt/content' to avoid better-sqlite3 issues
     '@formkit/nuxt',
     '@nuxt/image',
     '@nuxt/ui'
@@ -33,7 +32,29 @@ export default defineNuxtConfig({
     quality: 80,
     format: ['webp']
   },
-  // Removed content configuration section to avoid SQLite issues
+  // Konfigurace pro UnoCSS
+  unocss: {
+    // Preload fonts
+    webFonts: {
+      fonts: {
+        sans: 'Inter:400,500,600,700',
+        mono: ['Fira Code', 'Fira Mono:400,700'],
+      },
+    },
+    // Zajištění kompatibility s Nuxt UI
+    uno: true,
+    attributify: true,
+    icons: {
+      scale: 1.2,
+    },
+    shortcuts: [
+      // můžete definovat shortcuty přímo zde, nebo v uno.config.ts
+    ],
+    safelist: [
+      'i-heroicons-check',
+      'i-heroicons-x-mark',
+    ],
+  },
   ui: {
     icons: ['heroicons'],
     global: true,

@@ -1,50 +1,67 @@
-import { defineConfig } from 'unocss'
-import { presetUno, presetIcons, presetTypography, presetAttributify } from 'unocss'
-import { presetWind } from 'unocss' // Add the Wind preset which is compatible with Tailwind classes
+import {
+  defineConfig,
+  presetAttributify,
+  presetIcons,
+  presetTypography,
+  presetUno,
+  presetWebFonts,
+  transformerDirectives,
+  transformerVariantGroup
+} from 'unocss'
 
 export default defineConfig({
-  // Include essential presets to support Nuxt UI's classes
-  presets: [
-    presetUno(),
-    presetWind(), // This preset supports Tailwind-compatible classes that Nuxt UI uses
-    presetIcons(),
-    presetAttributify(), // Support attribute format for classes
-    presetTypography(),
+  shortcuts: [
+    // Můžete definovat vlastní zkratky zde
+    ['btn', 'px-4 py-2 rounded inline-block bg-primary text-white cursor-pointer hover:bg-primary-600 transition duration-200 ease-in-out'],
+    ['btn-gray', 'px-4 py-2 rounded inline-block bg-gray-500 text-white cursor-pointer hover:bg-gray-600 transition duration-200 ease-in-out'],
+    ['container-custom', 'w-full max-w-full mx-auto px-3 sm:px-4 lg:px-6 lg:max-w-[1344px] box-border']
   ],
-  // Important: Add safelist for Nuxt UI classes to ensure they're included
-  safelist: [
-    // Colors from your app.config.ts
-    ...['blue', 'slate', 'gray'].flatMap(color => 
-      ['bg', 'text', 'border', 'ring', 'focus:ring'].flatMap(prefix => 
-        [...Array(9)].map((_, i) => `${prefix}-${color}-${(i + 1) * 100}`)
-      )
-    ),
-    // Default Nuxt UI classes
-    ...['primary'].flatMap(color => 
-      ['bg', 'text', 'border', 'ring', 'focus:ring'].flatMap(prefix => 
-        [...Array(9)].map((_, i) => `${prefix}-${color}-${(i + 1) * 100}`)
-      )
-    ),
-  ],
-  shortcuts: {
-    // Add any custom shortcuts you need
-    'btn': 'py-2 px-4 font-semibold rounded-md shadow-sm',
-    'btn-primary': 'bg-primary-500 text-white hover:bg-primary-600',
-  },
   theme: {
     colors: {
+      // Definování vlastních barev
       primary: {
-        50: '#eef2ff',
-        100: '#e0e7ff',
-        200: '#c7d2fe',
-        300: '#a5b4fc',
-        400: '#818cf8',
-        500: '#2c6ecb', // from your CSS variables
-        600: '#4f46e5',
-        700: '#4338ca',
-        800: '#3730a3',
-        900: '#312e81',
+        DEFAULT: '#2c6ecb',
+        '50': '#eef2ff',
+        '100': '#e0e7ff',
+        '200': '#c7d2fe',
+        '300': '#a5b4fc',
+        '400': '#818cf8',
+        '500': '#2c6ecb',
+        '600': '#4f46e5',
+        '700': '#4338ca',
+        '800': '#3730a3',
+        '900': '#312e81'
       },
     },
   },
+  presets: [
+    presetUno(), // základní preset s Tailwind/Windi CSS-like utilit třídami
+    presetAttributify(), // použití attributů místo tříd
+    presetIcons({
+      scale: 1.2,
+      extraProperties: {
+        'display': 'inline-block',
+        'vertical-align': 'middle',
+      },
+    }),
+    presetTypography(), // typografie
+    presetWebFonts({
+      fonts: {
+        sans: 'Inter:400,500,600,700',
+        mono: ['Fira Code', 'Fira Mono:400,700'],
+      },
+    }),
+  ],
+  transformers: [
+    transformerDirectives(), // podpora pro @apply, @screen, atd.
+    transformerVariantGroup(), // podpora pro (hover:text-red/sm:text-green)
+  ],
+  safelist: [
+    'prose',
+    'prose-sm',
+    'm-auto',
+    'text-left',
+    'text-center',
+    'text-right',
+  ]
 })
