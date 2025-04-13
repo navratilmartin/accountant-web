@@ -2,9 +2,6 @@
     "name": "accountant-web",
     "compatibility_date": "2025-04-13",
     "main": "workers-site/index.js",
-    "assets": {
-      "directory": "./.output/public"
-    },
     "site": {
       "bucket": "./.output/public"
     }
