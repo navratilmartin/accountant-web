@@ -1,6 +1,9 @@
 /* Import Tailwind base styles for Nuxt UI compatibility */
 /* Tailwind CSS bude poskytovat vlastní reset, nepotřebujeme UnoCSS reset */
 
+@import '@unocss/reset/tailwind.css';
+
+
 /* Základní styly */
 :root {
   --primary-color: #2c6ecb;
