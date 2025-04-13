@@ -54,5 +54,18 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ['@vueuse/core', '@vueuse/motion']
     }
+  },
+  // Nastavení pro správné generování statických souborů pro Cloudflare Pages
+  nitro: {
+    preset: 'cloudflare-pages',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/sluzby',
+        '/cenik',
+        '/reference'
+      ]
+    }
   }
 })
