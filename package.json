@@ -13,6 +13,7 @@
     "@formkit/nuxt": "^1.6.9",
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui": "^3.0.2",
+    "@unocss/reset": "66.1.0-beta.11",
     "@vueuse/core": "^13.1.0",
     "@vueuse/motion": "^3.0.3",
     "nuxt": "^3.16.2",
