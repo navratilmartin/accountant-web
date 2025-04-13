@@ -1,5 +1,5 @@
 /* Import Tailwind base styles for Nuxt UI compatibility */
-@import '@unocss/reset/tailwind.css';
+/* Tailwind CSS bude poskytovat vlastní reset, nepotřebujeme UnoCSS reset */
 
 /* Základní styly */
 :root {
