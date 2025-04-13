@@ -158,192 +158,376 @@
         <!-- Vedení účetnictví -->
         <div id="ucetnictvi" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
-            <div class="flex items-center mb-6">
-              <UIcon name="i-heroicons-calculator" class="text-primary text-3xl mr-4" />
-              <h2 class="text-2xl md:text-3xl font-bold">Vedení účetnictví</h2>
-            </div>
+            <ClientOnly>
+              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+                <UIcon name="i-heroicons-calculator" class="text-primary text-3xl mr-4" />
+                <h2 class="text-2xl md:text-3xl font-bold">Vedení účetnictví</h2>
+              </div>
 
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
-              <p class="mb-4">Poskytuji komplexní zpracování účetnictví a daňové evidence pro OSVČ a menší firmy. Vaše doklady zpracuji pečlivě a přesně, tak aby vše bylo v souladu s účetními i daňovými předpisy.</p>
-              
-              <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Daňová evidence</h3>
-                    <p class="text-gray-600">Pro živnostníky s obratem do 25 mil. Kč ročně. Jednoduché a přehledné evidování příjmů a výdajů.</p>
-                  </div>
-                </div>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+                <p class="mb-4">Poskytuji komplexní zpracování účetnictví a daňové evidence pro OSVČ a menší firmy. Vaše doklady zpracuji pečlivě a přesně, tak aby vše bylo v souladu s účetními i daňovými předpisy.</p>
                 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Podvojné účetnictví</h3>
-                    <p class="text-gray-600">Komplexní zpracování účetnictví podle aktuálních účetních standardů a legislativy.</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Daňová evidence</h3>
+                      <p class="text-gray-600">Pro živnostníky s obratem do 25 mil. Kč ročně. Jednoduché a přehledné evidování příjmů a výdajů.</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Zpracování DPH</h3>
-                    <p class="text-gray-600">Příprava a podání přiznání k DPH, kontrolní hlášení, souhrnná hlášení.</p>
+                  
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Podvojné účetnictví</h3>
+                      <p class="text-gray-600">Komplexní zpracování účetnictví podle aktuálních účetních standardů a legislativy.</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Evidence majetku</h3>
-                    <p class="text-gray-600">Správa dlouhodobého a drobného majetku, odpisy, inventarizace.</p>
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Zpracování DPH</h3>
+                      <p class="text-gray-600">Příprava a podání přiznání k DPH, kontrolní hlášení, souhrnná hlášení.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Evidence majetku</h3>
+                      <p class="text-gray-600">Správa dlouhodobého a drobného majetku, odpisy, inventarizace.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <template #fallback>
+                <div class="flex items-center mb-6">
+                  <UIcon name="i-heroicons-calculator" class="text-primary text-3xl mr-4" />
+                  <h2 class="text-2xl md:text-3xl font-bold">Vedení účetnictví</h2>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                  <p class="mb-4">Poskytuji komplexní zpracování účetnictví a daňové evidence pro OSVČ a menší firmy. Vaše doklady zpracuji pečlivě a přesně, tak aby vše bylo v souladu s účetními i daňovými předpisy.</p>
+                  
+                  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Daňová evidence</h3>
+                        <p class="text-gray-600">Pro živnostníky s obratem do 25 mil. Kč ročně. Jednoduché a přehledné evidování příjmů a výdajů.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Podvojné účetnictví</h3>
+                        <p class="text-gray-600">Komplexní zpracování účetnictví podle aktuálních účetních standardů a legislativy.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Zpracování DPH</h3>
+                        <p class="text-gray-600">Příprava a podání přiznání k DPH, kontrolní hlášení, souhrnná hlášení.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Evidence majetku</h3>
+                        <p class="text-gray-600">Správa dlouhodobého a drobného majetku, odpisy, inventarizace.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </ClientOnly>
           </div>
         </div>
 
         <!-- Daňová přiznání -->
         <div id="dane" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
-            <div class="flex items-center mb-6">
-              <UIcon name="i-heroicons-document-text" class="text-primary text-3xl mr-4" />
-              <h2 class="text-2xl md:text-3xl font-bold">Daňová přiznání</h2>
-            </div>
+            <ClientOnly>
+              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+                <UIcon name="i-heroicons-document-text" class="text-primary text-3xl mr-4" />
+                <h2 class="text-2xl md:text-3xl font-bold">Daňová přiznání</h2>
+              </div>
 
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
-              <p class="mb-4">Zpracuji za vás všechny typy daňových přiznání včas a správně. Díky znalosti aktuální daňové legislativy dokážu navrhnout optimální řešení pro vaše daňové povinnosti.</p>
-              
-              <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Daň z příjmů fyzických osob</h3>
-                    <p class="text-gray-600">Kompletní zpracování daňového přiznání pro OSVČ včetně příloh a přehledů pro OSSZ a ZP.</p>
-                  </div>
-                </div>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+                <p class="mb-4">Zpracuji za vás všechny typy daňových přiznání včas a správně. Díky znalosti aktuální daňové legislativy dokážu navrhnout optimální řešení pro vaše daňové povinnosti.</p>
                 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Daň z příjmů právnických osob</h3>
-                    <p class="text-gray-600">Přiznání k dani z příjmů pro s.r.o. a další právnické osoby.</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Daň z příjmů fyzických osob</h3>
+                      <p class="text-gray-600">Kompletní zpracování daňového přiznání pro OSVČ včetně příloh a přehledů pro OSSZ a ZP.</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Silniční daň</h3>
-                    <p class="text-gray-600">Výpočet a zpracování přiznání k silniční dani pro firemní vozidla.</p>
+                  
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Daň z příjmů právnických osob</h3>
+                      <p class="text-gray-600">Přiznání k dani z příjmů pro s.r.o. a další právnické osoby.</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Další daňová přiznání</h3>
-                    <p class="text-gray-600">Zpracování dalších typů daňových přiznání podle vašich potřeb.</p>
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Silniční daň</h3>
+                      <p class="text-gray-600">Výpočet a zpracování přiznání k silniční dani pro firemní vozidla.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Další daňová přiznání</h3>
+                      <p class="text-gray-600">Zpracování dalších typů daňových přiznání podle vašich potřeb.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <template #fallback>
+                <div class="flex items-center mb-6">
+                  <UIcon name="i-heroicons-document-text" class="text-primary text-3xl mr-4" />
+                  <h2 class="text-2xl md:text-3xl font-bold">Daňová přiznání</h2>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                  <p class="mb-4">Zpracuji za vás všechny typy daňových přiznání včas a správně. Díky znalosti aktuální daňové legislativy dokážu navrhnout optimální řešení pro vaše daňové povinnosti.</p>
+                  
+                  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Daň z příjmů fyzických osob</h3>
+                        <p class="text-gray-600">Kompletní zpracování daňového přiznání pro OSVČ včetně příloh a přehledů pro OSSZ a ZP.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Daň z příjmů právnických osob</h3>
+                        <p class="text-gray-600">Přiznání k dani z příjmů pro s.r.o. a další právnické osoby.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Silniční daň</h3>
+                        <p class="text-gray-600">Výpočet a zpracování přiznání k silniční dani pro firemní vozidla.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Další daňová přiznání</h3>
+                        <p class="text-gray-600">Zpracování dalších typů daňových přiznání podle vašich potřeb.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </ClientOnly>
           </div>
         </div>
 
         <!-- Účetní poradenství -->
         <div id="poradenstvi" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
-            <div class="flex items-center mb-6">
-              <UIcon name="i-heroicons-light-bulb" class="text-primary text-3xl mr-4" />
-              <h2 class="text-2xl md:text-3xl font-bold">Účetní poradenství</h2>
-            </div>
+            <ClientOnly>
+              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+                <UIcon name="i-heroicons-light-bulb" class="text-primary text-3xl mr-4" />
+                <h2 class="text-2xl md:text-3xl font-bold">Účetní poradenství</h2>
+              </div>
 
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
-              <p class="mb-4">Poskytuji komplexní účetní a daňové poradenství pro OSVČ. Pomůžu vám zorientovat se v účetních a daňových předpisech a optimalizovat vaše podnikání z hlediska daní.</p>
-              
-              <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Daňová optimalizace</h3>
-                    <p class="text-gray-600">Návrhy legálních postupů pro snížení daňové zátěže a efektivní využití daňových úlev.</p>
-                  </div>
-                </div>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+                <p class="mb-4">Poskytuji komplexní účetní a daňové poradenství pro OSVČ. Pomůžu vám zorientovat se v účetních a daňových předpisech a optimalizovat vaše podnikání z hlediska daní.</p>
                 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Zahájení a ukončení podnikání</h3>
-                    <p class="text-gray-600">Poradenství při založení živnosti nebo firmy, při ukončení nebo změně formy podnikání.</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Daňová optimalizace</h3>
+                      <p class="text-gray-600">Návrhy legálních postupů pro snížení daňové zátěže a efektivní využití daňových úlev.</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Konzultace k účetním dokladům</h3>
-                    <p class="text-gray-600">Poradenství ohledně správného vystavování a náležitostí účetních dokladů.</p>
+                  
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Zahájení a ukončení podnikání</h3>
+                      <p class="text-gray-600">Poradenství při založení živnosti nebo firmy, při ukončení nebo změně formy podnikání.</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Zastupování na úřadech</h3>
-                    <p class="text-gray-600">Zastupování při jednáních s finančním úřadem a dalšími institucemi.</p>
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Konzultace k účetním dokladům</h3>
+                      <p class="text-gray-600">Poradenství ohledně správného vystavování a náležitostí účetních dokladů.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Zastupování na úřadech</h3>
+                      <p class="text-gray-600">Zastupování při jednáních s finančním úřadem a dalšími institucemi.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <template #fallback>
+                <div class="flex items-center mb-6">
+                  <UIcon name="i-heroicons-light-bulb" class="text-primary text-3xl mr-4" />
+                  <h2 class="text-2xl md:text-3xl font-bold">Účetní poradenství</h2>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                  <p class="mb-4">Poskytuji komplexní účetní a daňové poradenství pro OSVČ. Pomůžu vám zorientovat se v účetních a daňových předpisech a optimalizovat vaše podnikání z hlediska daní.</p>
+                  
+                  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Daňová optimalizace</h3>
+                        <p class="text-gray-600">Návrhy legálních postupů pro snížení daňové zátěže a efektivní využití daňových úlev.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Zahájení a ukončení podnikání</h3>
+                        <p class="text-gray-600">Poradenství při založení živnosti nebo firmy, při ukončení nebo změně formy podnikání.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Konzultace k účetním dokladům</h3>
+                        <p class="text-gray-600">Poradenství ohledně správného vystavování a náležitostí účetních dokladů.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Zastupování na úřadech</h3>
+                        <p class="text-gray-600">Zastupování při jednáních s finančním úřadem a dalšími institucemi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </ClientOnly>
           </div>
         </div>
 
         <!-- Další služby -->
         <div id="ostatni" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
-            <div class="flex items-center mb-6">
-              <UIcon name="i-heroicons-briefcase" class="text-primary text-3xl mr-4" />
-              <h2 class="text-2xl md:text-3xl font-bold">Další služby</h2>
-            </div>
+            <ClientOnly>
+              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+                <UIcon name="i-heroicons-briefcase" class="text-primary text-3xl mr-4" />
+                <h2 class="text-2xl md:text-3xl font-bold">Další služby</h2>
+              </div>
 
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
-              <p class="mb-4">Kromě základních účetních služeb nabízím i další služby, které mohou usnadnit vaše podnikání:</p>
-              
-              <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Mzdové účetnictví</h3>
-                    <p class="text-gray-600">Kompletní zpracování mezd pro vaše zaměstnance včetně všech souvisejících výkazů.</p>
-                  </div>
-                </div>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+                <p class="mb-4">Kromě základních účetních služeb nabízím i další služby, které mohou usnadnit vaše podnikání:</p>
                 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Fakturace a administrativa</h3>
-                    <p class="text-gray-600">Pomoc s vystavováním faktur a další administrativou spojenou s podnikáním.</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Mzdové účetnictví</h3>
+                      <p class="text-gray-600">Kompletní zpracování mezd pro vaše zaměstnance včetně všech souvisejících výkazů.</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Ekonomické poradenství</h3>
-                    <p class="text-gray-600">Analýzy hospodaření, finanční plánování a další ekonomické konzultace.</p>
+                  
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Fakturace a administrativa</h3>
+                      <p class="text-gray-600">Pomoc s vystavováním faktur a další administrativou spojenou s podnikáním.</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="flex">
-                  <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
-                  <div>
-                    <h3 class="font-medium mb-1">Školení a konzultace</h3>
-                    <p class="text-gray-600">Individuální školení v oblasti účetnictví a daní pro vás nebo vaše zaměstnance.</p>
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Ekonomické poradenství</h3>
+                      <p class="text-gray-600">Analýzy hospodaření, finanční plánování a další ekonomické konzultace.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex">
+                    <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                    <div>
+                      <h3 class="font-medium mb-1">Školení a konzultace</h3>
+                      <p class="text-gray-600">Individuální školení v oblasti účetnictví a daní pro vás nebo vaše zaměstnance.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <template #fallback>
+                <div class="flex items-center mb-6">
+                  <UIcon name="i-heroicons-briefcase" class="text-primary text-3xl mr-4" />
+                  <h2 class="text-2xl md:text-3xl font-bold">Další služby</h2>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
+                  <p class="mb-4">Kromě základních účetních služeb nabízím i další služby, které mohou usnadnit vaše podnikání:</p>
+                  
+                  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Mzdové účetnictví</h3>
+                        <p class="text-gray-600">Kompletní zpracování mezd pro vaše zaměstnance včetně všech souvisejících výkazů.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Fakturace a administrativa</h3>
+                        <p class="text-gray-600">Pomoc s vystavováním faktur a další administrativou spojenou s podnikáním.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Ekonomické poradenství</h3>
+                        <p class="text-gray-600">Analýzy hospodaření, finanční plánování a další ekonomické konzultace.</p>
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
+                      <div>
+                        <h3 class="font-medium mb-1">Školení a konzultace</h3>
+                        <p class="text-gray-600">Individuální školení v oblasti účetnictví a daní pro vás nebo vaše zaměstnance.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </ClientOnly>
           </div>
         </div>
       </div>
