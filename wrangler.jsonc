@@ -1,0 +1,13 @@
+{
+  "name": "accountant-web",
+  "compatibility_date": "2025-04-13",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    { "pattern": "/*", "content": "./dist/*" }
+  ],
+  "site": {
+    "bucket": "./dist"
+  }
+}
