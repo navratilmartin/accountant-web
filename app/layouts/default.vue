@@ -6,7 +6,7 @@
         <nav class="flex justify-between items-center">
           <!-- Logo area with subtle scaling on hover -->
           <NuxtLink to="/" class="text-xl font-bold text-primary transition-transform hover:scale-105 duration-300">
-            Účetní služby
+            Účetní Blansko  
           </NuxtLink>
           
           <!-- Main Navigation (Desktop) -->
@@ -92,9 +92,9 @@
           <div>
             <h3 class="font-semibold text-lg mb-4">Kontaktní údaje</h3>
             <div class="space-y-2">
-              <p>Jméno Příjmení</p>
-              <p>E-mail: info@ucetni.cz</p>
-              <p>Telefon: +420 123 456 789</p>
+              <p>Martina Navrátilová</p>
+              <p>E-mail: navratilova.ucto@seznam.cz</p>
+              <p>Telefon: +420 774 069 617</p>
             </div>
           </div>
           <div>
@@ -109,13 +109,13 @@
           </div>
           <div>
             <h3 class="font-semibold text-lg mb-4">Adresa kanceláře</h3>
-            <p>Ulice 123</p>
-            <p>110 00 Praha 1</p>
+            <p>Okružní 17</p>
+            <p>678 01 Blansko</p>
             <p>Česká republika</p>
           </div>
         </div>
-        <div class="mt-8 text-center">
-          <p>&copy; {{ new Date().getFullYear() }} Účetní služby. Všechna práva vyhrazena.</p>
+        <div class="mt-12 text-center">
+          <p>&copy; {{ new Date().getFullYear() }} Účetní Blansko. Všechna práva vyhrazena.</p>
         </div>
       </div>
     </footer>
@@ -126,7 +126,6 @@
 const isMenuOpen = ref(false);
 
 const navLinks = [
-  { title: 'Úvod', path: '/#home' },
   { title: 'Služby', path: '/#sluzby' },
   { title: 'O mně', path: '/#o-mne' },
   { title: 'Ceník', path: '/cenik' },

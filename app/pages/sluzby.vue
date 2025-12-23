@@ -562,7 +562,7 @@ onMounted(() => {
 });
 
 definePageMeta({
-  title: 'Účetní služby pro OSVČ | Kompletní nabídka',
+  title: 'Účetní služby pro OSVČ Blansko | Kompletní nabídka',
   description: 'Kompletní nabídka účetních služeb pro OSVČ - vedení účetnictví, daňová přiznání a poradenství. Profesionální služby pro vaše podnikání.'
 });
 </script>
