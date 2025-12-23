@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: [
@@ -74,6 +77,20 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: ['@vueuse/core', '@vueuse/motion']
+    }
+  },
+  // Konfigurace proměnných prostředí
+  runtimeConfig: {
+    // Proměnné prostředí dostupné pouze na serveru
+    emailHost: process.env.EMAIL_HOST,
+    emailPort: process.env.EMAIL_PORT,
+    emailSecure: process.env.EMAIL_SECURE,
+    emailUser: process.env.EMAIL_USER,
+    emailPass: process.env.EMAIL_PASS,
+    emailRecipient: process.env.EMAIL_RECIPIENT,
+    // Proměnné prostředí dostupné i na klientovi (veřejné)
+    public: {
+      // Zde můžete přidat veřejné proměnné, které mohou být dostupné i v prohlížeči
     }
   },
   // Nastavení pro správné generování statických souborů pro Cloudflare Pages

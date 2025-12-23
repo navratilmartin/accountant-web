@@ -9,25 +9,25 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-    "@formkit/nuxt": "^1.6.9",
-    "@nuxt/image": "^1.10.0",
-    "@nuxt/ui": "^3.0.2",
-    "@unocss/reset": "66.1.0-beta.11",
-    "@vueuse/core": "^13.1.0",
-    "@vueuse/motion": "^3.0.3",
-    "nuxt": "^3.16.2",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
-  },
   "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971",
   "devDependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.0",
+    "@formkit/nuxt": "^1.6.9",
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/ui": "^3.0.2",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
     "@unocss/nuxt": "66.1.0-beta.11",
+    "@unocss/reset": "66.1.0-beta.11",
+    "@vueuse/core": "^13.1.0",
+    "@vueuse/motion": "^3.0.3",
     "autoprefixer": "^10.4.21",
     "node-gyp": "^11.2.0",
-    "unocss": "66.1.0-beta.11"
+    "nuxt": "^4.2.1",
+    "unocss": "66.1.0-beta.11",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "nodemailer": "^7.0.11"
+
   }
 }
