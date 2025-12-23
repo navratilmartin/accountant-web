@@ -159,12 +159,12 @@
         <div id="ucetnictvi" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
             <ClientOnly>
-              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+              <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-calculator" class="text-primary text-3xl mr-4" />
                 <h2 class="text-2xl md:text-3xl font-bold">Vedení účetnictví</h2>
               </div>
 
-              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
                 <p class="mb-4">Poskytuji komplexní zpracování účetnictví a daňové evidence pro OSVČ a menší firmy. Vaše doklady zpracuji pečlivě a přesně, tak aby vše bylo v souladu s účetními i daňovými předpisy.</p>
                 
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -253,12 +253,12 @@
         <div id="dane" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
             <ClientOnly>
-              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+              <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-document-text" class="text-primary text-3xl mr-4" />
                 <h2 class="text-2xl md:text-3xl font-bold">Daňová přiznání</h2>
               </div>
 
-              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
                 <p class="mb-4">Zpracuji za vás všechny typy daňových přiznání včas a správně. Díky znalosti aktuální daňové legislativy dokážu navrhnout optimální řešení pro vaše daňové povinnosti.</p>
                 
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -347,12 +347,12 @@
         <div id="poradenstvi" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
             <ClientOnly>
-              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+              <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-light-bulb" class="text-primary text-3xl mr-4" />
                 <h2 class="text-2xl md:text-3xl font-bold">Účetní poradenství</h2>
               </div>
 
-              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
                 <p class="mb-4">Poskytuji komplexní účetní a daňové poradenství pro OSVČ. Pomůžu vám zorientovat se v účetních a daňových předpisech a optimalizovat vaše podnikání z hlediska daní.</p>
                 
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -441,12 +441,12 @@
         <div id="ostatni" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
             <ClientOnly>
-              <div class="flex items-center mb-6" v-motion-slide-visible-once-bottom>
+              <div class="flex items-center mb-6">
                 <UIcon name="i-heroicons-briefcase" class="text-primary text-3xl mr-4" />
                 <h2 class="text-2xl md:text-3xl font-bold">Další služby</h2>
               </div>
 
-              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm" v-motion-fade-visible-once>
+              <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
                 <p class="mb-4">Kromě základních účetních služeb nabízím i další služby, které mohou usnadnit vaše podnikání:</p>
                 
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">

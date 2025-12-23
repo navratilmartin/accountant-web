@@ -64,7 +64,7 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <!-- Základní balíček -->
             <ClientOnly>
-              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden" v-motion-slide-visible-once-bottom>
+              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
                 <div class="p-6 border-b border-gray-100">
                   <h3 class="text-xl font-bold text-center mb-1">Základní</h3>
                   <p class="text-gray-500 text-center mb-6">Pro začínající OSVČ</p>
@@ -133,7 +133,7 @@
 
             <!-- Standardní balíček -->
             <ClientOnly>
-              <div class="bg-white rounded-xl shadow-lg border-2 border-primary overflow-hidden relative transform md:-translate-y-4" v-motion-slide-visible-once-bottom>
+              <div class="bg-white rounded-xl shadow-lg border-2 border-primary overflow-hidden relative transform md:-translate-y-4">
                 <div class="absolute top-0 right-0 left-0 h-1 bg-primary"></div>
                 <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-xs font-bold py-1 px-3 rounded-full">
                   Nejpopulárnější
@@ -207,7 +207,7 @@
 
             <!-- Premium balíček -->
             <ClientOnly>
-              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden" v-motion-slide-visible-once-bottom>
+              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
                 <div class="p-6 border-b border-gray-100">
                   <h3 class="text-xl font-bold text-center mb-1">Premium</h3>
                   <p class="text-gray-500 text-center mb-6">Pro náročné podnikatele</p>
@@ -371,7 +371,7 @@
           <!-- Poradenské služby s hodinovými sazbami -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <ClientOnly>
-              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden" v-motion-slide-visible-once-bottom>
+              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
                 <div class="p-6 border-b border-gray-100">
                   <div class="flex items-center justify-center mb-4">
                     <UIcon name="i-heroicons-user" class="text-primary text-3xl" />
@@ -434,7 +434,7 @@
             </ClientOnly>
             
             <ClientOnly>
-              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden" v-motion-slide-visible-once-bottom>
+              <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
                 <div class="p-6 border-b border-gray-100">
                   <div class="flex items-center justify-center mb-4">
                     <UIcon name="i-heroicons-document-check" class="text-primary text-3xl" />

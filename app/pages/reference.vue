@@ -28,7 +28,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           <!-- Reference 1 -->
           <ClientOnly>
-            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative" v-motion-slide-visible-once-bottom>
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative">
               <div class="absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full bg-primary">
                 <UIcon name="i-heroicons-quote-marks" class="text-white text-lg" />
               </div>
@@ -92,7 +92,7 @@
 
           <!-- Reference 2 -->
           <ClientOnly>
-            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative" v-motion-slide-visible-once-bottom>
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative">
               <div class="absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full bg-primary">
                 <UIcon name="i-heroicons-quote-marks" class="text-white text-lg" />
               </div>
@@ -156,7 +156,7 @@
 
           <!-- Reference 3 -->
           <ClientOnly>
-            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative" v-motion-slide-visible-once-bottom>
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative">
               <div class="absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full bg-primary">
                 <UIcon name="i-heroicons-quote-marks" class="text-white text-lg" />
               </div>
@@ -220,7 +220,7 @@
 
           <!-- Reference 4 -->
           <ClientOnly>
-            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative" v-motion-slide-visible-once-bottom>
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative">
               <div class="absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full bg-primary">
                 <UIcon name="i-heroicons-quote-marks" class="text-white text-lg" />
               </div>
@@ -284,7 +284,7 @@
 
           <!-- Reference 5 -->
           <ClientOnly>
-            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative" v-motion-slide-visible-once-bottom>
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative">
               <div class="absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full bg-primary">
                 <UIcon name="i-heroicons-quote-marks" class="text-white text-lg" />
               </div>
@@ -348,7 +348,7 @@
 
           <!-- Reference 6 -->
           <ClientOnly>
-            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative" v-motion-slide-visible-once-bottom>
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 relative">
               <div class="absolute -top-4 -left-4 w-10 h-10 flex items-center justify-center rounded-full bg-primary">
                 <UIcon name="i-heroicons-quote-marks" class="text-white text-lg" />
               </div>
@@ -417,7 +417,7 @@
     <section class="py-16 md:py-24 bg-gray-50">
       <div class="container-custom">
         <ClientOnly>
-          <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 md:p-12 relative" v-motion-fade-visible-once>
+          <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 md:p-12 relative">
             <div class="absolute -top-6 -left-6 w-16 h-16 flex items-center justify-center rounded-full bg-primary shadow-lg">
               <UIcon name="i-heroicons-quote-marks" class="text-white text-2xl" />
             </div>
@@ -566,7 +566,7 @@
         
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
           <ClientOnly>
-            <div class="text-center p-6" v-motion-slide-visible-once-bottom>
+            <div class="text-center p-6">
               <div class="text-4xl md:text-5xl font-bold mb-2">8+</div>
               <p class="text-lg opacity-80">Let praxe</p>
             </div>
@@ -579,7 +579,7 @@
           </ClientOnly>
           
           <ClientOnly>
-            <div class="text-center p-6" v-motion-slide-visible-once-bottom>
+            <div class="text-center p-6">
               <div class="text-4xl md:text-5xl font-bold mb-2">350+</div>
               <p class="text-lg opacity-80">Spokojených klientů</p>
             </div>
@@ -592,7 +592,7 @@
           </ClientOnly>
           
           <ClientOnly>
-            <div class="text-center p-6" v-motion-slide-visible-once-bottom>
+            <div class="text-center p-6">
               <div class="text-4xl md:text-5xl font-bold mb-2">1200+</div>
               <p class="text-lg opacity-80">Zpracovaných daňových přiznání</p>
             </div>
@@ -605,7 +605,7 @@
           </ClientOnly>
           
           <ClientOnly>
-            <div class="text-center p-6" v-motion-slide-visible-once-bottom>
+            <div class="text-center p-6">
               <div class="text-4xl md:text-5xl font-bold mb-2">96%</div>
               <p class="text-lg opacity-80">Míra spokojenosti</p>
             </div>
