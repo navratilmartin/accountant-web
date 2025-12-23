@@ -74,11 +74,6 @@ export default defineNuxtConfig({
     // Konfigurace FormKit
     autoImport: true
   },
-  vite: {
-    optimizeDeps: {
-      include: ['@vueuse/core', '@vueuse/motion']
-    }
-  },
   // Konfigurace proměnných prostředí
   runtimeConfig: {
     // Proměnné prostředí dostupné pouze na serveru
@@ -110,7 +105,7 @@ export default defineNuxtConfig({
     },
     // Přidat podporu pro Node.js moduly
     externals: {
-      inline: ['@vueuse/core', '@vueuse/motion']  // Inline důležitých modulů
+      inline: ['@vueuse/core',]
     }
   }
 })
