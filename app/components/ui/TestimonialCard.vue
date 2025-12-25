@@ -28,19 +28,15 @@ withDefaults(defineProps<Props>(), {
 
     <div class="flex items-center pt-4 border-t border-gray-100 gap-4 h-18">
       <div class="w-12 h-12 flex items-center justify-center rounded-full overflow-hidden bg-gray-100 mr-2">
-        <UAvatar 
+        <img
           v-if="avatar"
-          :src="avatar" 
-          :alt="name" 
-          size="xl"
-          class="w-12 h-12"
+          :src="avatar"
+          :alt="name + ' avatar'"
+          class="w-full h-full object-cover"
         />
-        <UAvatar 
-          v-else
-          icon="i-heroicons-user"
-          size="xl"
-          class="w-12 h-12"
-        />
+        <span v-else class="w-full h-full flex items-center justify-center text-gray-400 text-xl">
+          {{ name.charAt(0).toUpperCase() }}
+        </span>
       </div>
       <div>
         <h4 class="font-semibold text-gray-900">{{ name }}</h4>
