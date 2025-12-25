@@ -76,14 +76,9 @@ export default defineNuxtConfig({
   },
   // Konfigurace proměnných prostředí
   runtimeConfig: {
-    // Proměnné prostředí dostupné pouze na serveru
-    emailHost: process.env.EMAIL_HOST,
-    emailPort: process.env.EMAIL_PORT,
-    emailSecure: process.env.EMAIL_SECURE,
-    emailUser: process.env.EMAIL_USER,
-    emailPass: process.env.EMAIL_PASS,
+    resendApiKey: process.env.RESEND_API_KEY, 
     emailRecipient: process.env.EMAIL_RECIPIENT,
-    // Proměnné prostředí dostupné i na klientovi (veřejné)
+    emailUser: process.env.EMAIL_USER, // Used for the "From" address
     public: {
       // Zde můžete přidat veřejné proměnné, které mohou být dostupné i v prohlížeči
     }

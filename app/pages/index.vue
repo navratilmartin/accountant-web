@@ -246,7 +246,8 @@
           </ClientOnly>
         </div>
         
-        <div class="text-center mt-12">
+        <!-- REMOVE FOR DEMO -->
+        <!-- <div class="text-center mt-12">
           <UButton 
             to="/cenik" 
             color="primary"
@@ -255,6 +256,17 @@
           >
             <UIcon name="i-heroicons-currency-euro" class="mr-2" />
             Zobrazit ceník služeb
+          </UButton>
+        </div> -->
+        <div class="text-center mt-12">
+          <UButton 
+            to="/sluzby" 
+            color="primary"
+            size="lg"
+            class="shadow-md text-white"
+          >
+            <UIcon name="i-heroicons-information-circle" class="mr-2" />
+            Více informací
           </UButton>
         </div>
       </div>
@@ -269,7 +281,7 @@
               <div class="absolute -z-10 w-full h-full -top-4 -right-4 bg-primary/10 rounded-xl"></div>
               <img
                 src="/img/accountant-portrait.webp"
-                alt="Jana Nováková - Účetní pro OSVČ"
+                alt="Martina Navrátilová - Účetní pro OSVČ"
                 class="rounded-xl shadow-lg z-10 relative"
                 width="400"
               />
@@ -279,7 +291,7 @@
                 <div class="absolute -z-10 w-full h-full -top-4 -right-4 bg-primary/10 rounded-xl"></div>
                 <img
                   src="/img/accountant-portrait.webp"
-                  alt="Jana Nováková - Účetní pro OSVČ"
+                  alt="Martina Navrátilová - Účetní pro OSVČ"
                   class="rounded-xl shadow-lg z-10 relative"
                   width="600"
                   height="400"
@@ -441,7 +453,7 @@
           </div>
         </div>
     
-        <div class="text-center mt-8">
+        <!-- <div class="text-center mt-8">
           <UButton 
             to="/reference" 
             color="primary"
@@ -451,7 +463,7 @@
             <UIcon name="i-heroicons-chat-bubble-left-right" class="mr-2" />
             Zobrazit všechny reference
           </UButton>
-        </div>
+        </div> -->
       </div>
     </section>
     
@@ -641,15 +653,15 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue'
-
 const featuredTestimonial = {
   name: 'Yasmin May',
   role: 'Podnikatelka v oblasti sociálních sítí',
-  quote: 'Spolupráce s paní Novákovou je naprosto bezproblémová. Oceňuji její profesionalitu, odbornost a rychlou komunikaci. Díky jejím radám jsem optimalizovala své daňové povinnosti a ušetřila nejen čas, ale i značné finanční prostředky. Můžu se konečně plně věnovat svému podnikání.',
+  quote: 'Spolupráce s paní Navrátilovou je naprosto bezproblémová. Oceňuji její profesionalitu, odbornost a rychlou komunikaci. Díky jejím radám jsem optimalizovala své daňové povinnosti a ušetřila nejen čas, ale i značné peníze. Můžu se konečně plně věnovat svému podnikání a hodit starosti s účetnictvím za hlavu.',
   rating: 5,
-  avatar: '/img/client1.webp',
+  avatar: '/img/yasmin-may.webp',
   yearStarted: '2022'
 }
 
@@ -664,21 +676,36 @@ const testimonials = [
   {
     name: 'Marek Dvořák',
     role: 'Webový vývojář',
-    quote: 'Jako začínající podnikatel jsem potřeboval někoho, kdo mi pomůže zorientovat se v účetnictví a daňových povinnostech. Paní Nováková mi vše trpělivě vysvětlila a nastavila systém, který mi perfektně vyhovuje. Výborná volba pro každého OSVČ!',
+    quote: 'Jako začínající podnikatel jsem potřeboval někoho, kdo mi pomůže zorientovat se v účetnictví a daňových povinnostech. Paní Navrátilová mi vše trpělivě vysvětlila a nastavila systém, který mi perfektně vyhovuje. Výborná volba pro každého OSVČ!',
     rating: 5,
-    avatar: '/img/client3.webp'
+    avatar: '/img/face1.webp'
   },
   {
     name: 'Martin Horák',
     role: 'Architekt',
     quote: 'Oceňuji především rychlou odezvu na všechny mé dotazy a velmi vstřícný přístup při řešení nestandardních situací. Díky profesionálním radám a daňové optimalizaci jsem ušetřil nemalé prostředky, které mohu investovat zpět do svého podnikání.',
-    rating: 5
+    rating: 5,
+    avatar: '/img/face3.webp'
+
   },
   {
     name: 'Lucie Černá',
     role: 'Copywriterka & obsahová stratégka',
-    quote: 'Spolupracuji s paní Novákovou již třetím rokem a jsem maximálně spokojená. Vždy dodržuje termíny, je nesmírně pečlivá a její rady mi ušetřily mnoho času i peněz. Účetnictví už pro mě není stres, ale hladce fungující zázemí.',
-    rating: 5
+    quote: 'Spolupracuji s paní Navrátilovou již třetím rokem a jsem maximálně spokojená. Vždy dodržuje termíny, je nesmírně pečlivá a její rady mi ušetřily mnoho času i peněz. Účetnictví už pro mě není stres, ale hladce fungující zázemí.',
+    rating: 5,
+    avatar: '/img/face6.webp'
+  },
+  {
+    name: 'David Svoboda',
+    role: 'Fotograf',
+    quote: 'Paní Navrátilová mi pomohla s digitalizací účetnictví a teď mám v dokladech naprostý pořádek. Oceňuji přechod na přehledný systém, který mi šetří spoustu času. Konečně se můžu naplno věnovat kreativní práci místo administrativy.',    rating: 5,
+    avatar: '/img/face4.webp'
+  },
+  {
+    name: 'Eva Vlčková',
+    role: 'Marketingová konzultantka',
+    quote: 'Oceňuji proaktivní přístup paní Navrátilové a její hluboké znalosti daňové problematiky. Pomohla mi nejen optimalizovat daně, ale také nastavit efektivní cash flow. Je pro mě spolehlivým partnerem v růstu mého podnikání.',    rating: 5,
+    avatar: '/img/face2.webp'
   }
 ]
 
