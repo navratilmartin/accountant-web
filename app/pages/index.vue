@@ -309,18 +309,18 @@
             
             <div class="space-y-4 mb-8">
               <div class="flex items-start">
-                <UIcon name="i-heroicons-academic-cap" class="text-primary text-xl mt-1 mr-3 flex-shrink-0" />
-                <div>
-                  <h4 class="font-semibold mb-1">Kvalifikace a vzdělání</h4>
-                  <p class="text-gray-600">Vysokoškolské vzdělání v oboru účetnictví a daně, pravidelná školení a certifikace.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start">
                 <UIcon name="i-heroicons-briefcase" class="text-primary text-xl mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <h4 class="font-semibold mb-1">Bohaté zkušenosti</h4>
                   <p class="text-gray-600">Více než 30 let praxe v účetnictví pro OSVČ a menší firmy v různých odvětvích.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <UIcon name="i-heroicons-academic-cap" class="text-primary text-xl mt-1 mr-3 flex-shrink-0" />
+                <div>
+                  <h4 class="font-semibold mb-1">Kvalifikace</h4>
+                  <p class="text-gray-600">Vzdělání v oboru účetnictví a daně, pravidelná školení a certifikace.</p>
                 </div>
               </div>
               
@@ -787,7 +787,7 @@ const faqItems = [
   },
   {
     label: 'Kolik stojí vaše služby?',
-    content: 'Ceny za služby se odvíjejí od rozsahu spolupráce, množství dokladů a složitosti vašeho účetnictví. Pro orientační cenovou nabídku navštivte sekci Ceník. Pro přesnou kalkulaci mě prosím kontaktujte se specifickými požadavky na vaše účetnictví.'
+    content: 'Ceny za služby se odvíjejí od rozsahu spolupráce, množství dokladů a složitosti vašeho účetnictví. Pro přesnou kalkulaci mě prosím kontaktujte se specifickými požadavky na vaše účetnictví.'
   }
 ];
 

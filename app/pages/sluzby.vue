@@ -137,18 +137,6 @@
             </template>
           </ClientOnly>
         </div>
-        
-        <div class="text-center mt-12">
-          <UButton 
-            to="/cenik" 
-            color="primary"
-            size="lg"
-            class="shadow-md"
-          >
-            <UIcon name="i-heroicons-currency-euro" class="mr-2" />
-            Zobrazit ceník služeb
-          </UButton>
-        </div>
       </div>
     </section>
 
@@ -540,11 +528,8 @@
           <h2 class="text-2xl md:text-3xl font-bold mb-4">Potřebujete některou z mých služeb?</h2>
           <p class="text-lg mb-8">Neváhejte mě kontaktovat pro nezávaznou konzultaci nebo cenovou nabídku.</p>
           <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <UButton to="/kontakt" color="primary" size="lg">
+            <UButton to="/#kontakt" color="primary" class="text-white" size="lg">
               Kontaktujte mě
-            </UButton>
-            <UButton to="/cenik" color="gray" variant="soft" size="lg">
-              Ceník služeb
             </UButton>
           </div>
         </div>
