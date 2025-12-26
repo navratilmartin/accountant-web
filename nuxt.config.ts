@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  features: {
+    inlineStyles: false,
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: [
@@ -35,9 +38,15 @@ export default defineNuxtConfig({
     quality: 80,
     format: ['webp']
   },
-  // Konfigurace pro UnoCSS
+  vite: {
+    build: {
+      // Reducing parallel processing can stop this specific TypeError 
+      cssCodeSplit: true,
+    }
+  },
   unocss: {
     // Preload fonts
+    mode: 'global',
     webFonts: {
       fonts: {
         sans: 'Inter:400,500,600,700',
