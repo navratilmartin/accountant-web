@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@formkit/nuxt',
     '@nuxt/image',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxtjs/sitemap'
   ],
   app: {
     head: {
@@ -92,16 +93,26 @@ export default defineNuxtConfig({
       // Zde můžete přidat veřejné proměnné, které mohou být dostupné i v prohlížeči
     }
   },
+  // SEO and Sitemap configuration
+  site: {
+    url: 'https://ucetni-blansko.cz',
+    name: 'Účetní služby pro OSVČ - Martina Navrátilová',
+  },
+  sitemap: {
+    strictNuxtContentPaths: true,
+    cacheMaxAgeSeconds: 3600,
+  },
   // Nastavení pro správné generování statických souborů pro Cloudflare Pages
   ssr: true,
   nitro: {
     preset: 'static',
     serveStatic: true,
     prerender: {
-      crawlLinks: false,  // Vypnout automatické procházení odkazů
+      crawlLinks: true,  // Enable automatic link crawling for better SEO
       routes: [
         '/',
-        '/ucetni-sluzby-osvc'
+        '/ucetni-sluzby-osvc',
+        '/reference-klientu'
       ],
       failOnError: false  // Nepřerušovat build při chybě renderování
     },
