@@ -6,7 +6,7 @@
         <nav class="flex justify-between items-center">
           <!-- Logo area with subtle scaling on hover -->
           <NuxtLink to="/" class="text-xl font-bold text-primary transition-transform hover:scale-105 duration-300">
-            Profi účetnictví
+            Účetní Blansko
           </NuxtLink>
           
           <!-- Main Navigation (Desktop) -->
@@ -117,7 +117,7 @@
           </div>
         </div>
         <div class="mt-12 text-center">
-          <p>&copy; {{ new Date().getFullYear() }} Profi účetnictví. Všechna práva vyhrazena.</p>
+          <p>&copy; {{ new Date().getFullYear() }} Účetní Blansko. Všechna práva vyhrazena.</p>
         </div>
       </div>
     </footer>
@@ -128,9 +128,9 @@
 const isMenuOpen = ref(false);
 
 const navLinks = [
-  { title: 'Služby', path: '/#sluzby' },
-  { title: 'O mně', path: '/#o-mne' },
+  { title: 'Služby', path: '/ucetni-sluzby-osvc' },
   { title: 'Reference', path: '/#reference' },
+  { title: 'O mně', path: '/#o-mne' },
 ];
 </script>
 
