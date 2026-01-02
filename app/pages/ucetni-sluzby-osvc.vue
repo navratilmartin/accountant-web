@@ -11,7 +11,7 @@
       <div class="container-custom relative z-10">
         <div class="text-center max-w-3xl mx-auto">
           <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium mb-4">Nabídka služeb</span>
-          <h1 class="text-3xl md:text-5xl font-bold mb-6">Účetní služby pro vaše podnikání</h1>
+          <h1 class="text-3xl md:text-5xl font-bold mb-6">Účetní služby pro OSVČ v Blansku i online</h1>
           <p class="text-lg text-gray-700">Komplexní nabídka účetních služeb a poradenství pro osoby samostatně výdělečně činné. Spolehlivě se postarám o vaše účetnictví, abyste se mohli soustředit na své podnikání.</p>
         </div>
       </div>
@@ -34,7 +34,7 @@
               <h3 class="text-xl font-bold mb-4">Vedení účetnictví</h3>
               <p class="text-gray-600 mb-6">Komplexní zpracování účetnictví nebo daňové evidence pro vaše podnikání.</p>
               <UButton 
-                to="/sluzby#ucetnictvi" 
+                to="/ucetni-sluzby-osvc#ucetnictvi" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -51,7 +51,7 @@
                 <h3 class="text-xl font-bold mb-4">Vedení účetnictví</h3>
                 <p class="text-gray-600 mb-6">Komplexní zpracování účetnictví nebo daňové evidence pro vaše podnikání.</p>
                 <UButton 
-                  to="/sluzby#ucetnictvi" 
+                  to="/ucetni-sluzby-osvc#ucetnictvi" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -71,7 +71,7 @@
               <h3 class="text-xl font-bold mb-4">Daňová přiznání</h3>
               <p class="text-gray-600 mb-6">Zpracování všech typů daňových přiznání pro OSVČ a zajištění jejich včasného podání.</p>
               <UButton 
-                to="/sluzby#dane" 
+                to="/ucetni-sluzby-osvc#dane" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -88,7 +88,7 @@
                 <h3 class="text-xl font-bold mb-4">Daňová přiznání</h3>
                 <p class="text-gray-600 mb-6">Zpracování všech typů daňových přiznání pro OSVČ a zajištění jejich včasného podání.</p>
                 <UButton 
-                  to="/sluzby#dane" 
+                  to="/ucetni-sluzby-osvc#dane" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -108,7 +108,7 @@
               <h3 class="text-xl font-bold mb-4">Účetní poradenství</h3>
               <p class="text-gray-600 mb-6">Odborné konzultace a poradenství v oblasti účetnictví, daní a finančního plánování.</p>
               <UButton 
-                to="/sluzby#poradenstvi" 
+                to="/ucetni-sluzby-osvc#poradenstvi" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -125,7 +125,7 @@
                 <h3 class="text-xl font-bold mb-4">Účetní poradenství</h3>
                 <p class="text-gray-600 mb-6">Odborné konzultace a poradenství v oblasti účetnictví, daní a finančního plánování.</p>
                 <UButton 
-                  to="/sluzby#poradenstvi" 
+                  to="/ucetni-sluzby-osvc#poradenstvi" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -528,7 +528,7 @@
           <h2 class="text-2xl md:text-3xl font-bold mb-4">Potřebujete některou z mých služeb?</h2>
           <p class="text-lg mb-8">Neváhejte mě kontaktovat pro nezávaznou konzultaci nebo cenovou nabídku.</p>
           <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <UButton to="/#kontakt" color="primary" class="text-white" size="lg">
+            <UButton to="/kontakt-blansko" color="primary" class="text-white" size="lg">
               Kontaktujte mě
             </UButton>
           </div>
@@ -541,14 +541,18 @@
 <script setup>
 import { onMounted } from 'vue';
 
+useSeoMeta({
+  title: 'Účetní služby pro OSVČ Blansko a online | Martina Navrátilová',
+  description: 'Nabízím komplexní účetní služby pro OSVČ v Blansku i online. Specializuji se na vedení účetnictví, zpracování daňových přiznání a daňovou optimalizaci. Objednejte si konzultaci.',
+  ogTitle: 'Účetní služby pro OSVČ Blansko a online | Martina Navrátilová',
+  ogDescription: 'Nabízím komplexní účetní služby pro OSVČ v Blansku i online. Specializuji se na vedení účetnictví, zpracování daňových přiznání a daňovou optimalizaci. Objednejte si konzultaci.',
+  ogUrl: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
+  canonical: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
+});
+
 // Animace budou aplikovány klientsky po načtení stránky
 onMounted(() => {
   // Zde můžeme inicializovat animace manuálně, pokud je potřeba
-});
-
-definePageMeta({
-  title: 'Účetní služby pro OSVČ Blansko | Kompletní nabídka',
-  description: 'Kompletní nabídka účetních služeb pro OSVČ - vedení účetnictví, daňová přiznání a poradenství. Profesionální služby pro vaše podnikání.'
 });
 </script>
 

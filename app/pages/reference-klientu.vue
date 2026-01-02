@@ -11,7 +11,7 @@
       <div class="container-custom relative z-10">
         <div class="text-center max-w-3xl mx-auto">
           <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium mb-4">Reference</span>
-          <h1 class="text-3xl md:text-5xl font-bold mb-6">Co o mně říkají klienti</h1>
+          <h1 class="text-3xl md:text-5xl font-bold mb-6">Reference spokojených klientů - Účetnictví pro OSVČ</h1>
           <p class="text-lg text-gray-700">Podívejte se na zkušenosti klientů, kteří využívají mých služeb v oblasti vedení účetnictví, daňových přiznání a účetního poradenství.</p>
         </div>
       </div>
@@ -47,8 +47,8 @@
                 <div class="flex items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
                     <UImage
-                      src="/img/testimonial1.webp"
-                      alt="Petr Novák"
+                      src="/img/client1.webp"
+                      alt="Reference klienta Petr Novák"
                       width="48"
                       height="48"
                       class="object-cover w-full h-full"
@@ -111,8 +111,8 @@
                 <div class="flex items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
                     <UImage
-                      src="/img/testimonial2.webp"
-                      alt="Jan Svoboda"
+                      src="/img/client2.webp"
+                      alt="Reference klienta Jan Svoboda"
                       width="48"
                       height="48"
                       class="object-cover w-full h-full"
@@ -175,8 +175,8 @@
                 <div class="flex items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
                     <UImage
-                      src="/img/testimonial3.webp"
-                      alt="Markéta Dvořáková"
+                      src="/img/client3.webp"
+                      alt="Reference klienta Markéta Dvořáková"
                       width="48"
                       height="48"
                       class="object-cover w-full h-full"
@@ -239,8 +239,8 @@
                 <div class="flex items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
                     <UImage
-                      src="/img/testimonial4.webp"
-                      alt="Tomáš Horák"
+                      src="/img/face1.webp"
+                      alt="Reference klienta Tomáš Horák"
                       width="48"
                       height="48"
                       class="object-cover w-full h-full"
@@ -303,8 +303,8 @@
                 <div class="flex items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
                     <UImage
-                      src="/img/testimonial5.webp"
-                      alt="Martin Kučera"
+                      src="/img/face2.webp"
+                      alt="Reference klienta Martin Kučera"
                       width="48"
                       height="48"
                       class="object-cover w-full h-full"
@@ -367,8 +367,8 @@
                 <div class="flex items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
                     <UImage
-                      src="/img/testimonial6.webp"
-                      alt="Alena Nováková"
+                      src="/img/face3.webp"
+                      alt="Reference klienta Alena Nováková"
                       width="48"
                       height="48"
                       class="object-cover w-full h-full"
@@ -426,8 +426,8 @@
               <div class="md:w-1/3 mb-6 md:mb-0">
                 <div class="rounded-lg overflow-hidden">
                   <UImage
-                    src="/img/featured-testimonial.webp"
-                    alt="Pavel Svoboda"
+                    src="/img/yasmin-may.webp"
+                    alt="Reference klienta Pavel Svoboda"
                     width="400"
                     height="300"
                     class="w-full h-auto"
@@ -631,7 +631,7 @@
                 <p class="text-lg opacity-90 mb-8">Nechte si nezávazně zpracovat nabídku účetních služeb na míru pro vaše podnikání.</p>
                 <div class="flex flex-col sm:flex-row gap-4">
                   <UButton 
-                    to="/kontakt" 
+                    to="/kontakt-blansko" 
                     color="white"
                     size="lg"
                     class="shadow-md"
@@ -640,7 +640,7 @@
                     Kontaktujte mě
                   </UButton>
                   <UButton 
-                    to="/sluzby" 
+                    to="/ucetni-sluzby-osvc" 
                     color="white"
                     variant="outline"
                     size="lg"
@@ -687,9 +687,11 @@
 </template>
 
 <script setup>
-definePageMeta({
-  title: 'Reference klientů | Účetní služby pro OSVČ',
-  description: 'Přečtěte si autentické reference od našich spokojených klientů. Zjistěte, proč si OSVČ vybírají naše účetní služby.'
+useSeoMeta({
+  title: 'Reference | Účetnictví pro OSVČ Blansko | Martina Navrátilová',
+  description: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ, daňové poradenství a vedení účetnictví.',
+  ogTitle: 'Reference | Účetnictví pro OSVČ Blansko | Martina Navrátilová',
+  ogDescription: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ, daňové poradenství a vedení účetnictví.'
 });
 </script>
 

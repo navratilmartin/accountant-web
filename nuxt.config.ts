@@ -101,9 +101,7 @@ export default defineNuxtConfig({
       crawlLinks: false,  // Vypnout automatické procházení odkazů
       routes: [
         '/',
-        '/sluzby',
-        '/cenik',
-        '/reference'
+        '/ucetni-sluzby-osvc'
       ],
       failOnError: false  // Nepřerušovat build při chybě renderování
     },
