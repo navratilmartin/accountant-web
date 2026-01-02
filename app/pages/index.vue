@@ -2,7 +2,7 @@
   <div>
     <!-- Hero sekce -->
     <section id="home" class="relative h-[80vh] px-20 overflow-hidden bg-gradient-to-br from-white to-white-50">
-      <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-primary/10 to-blue-50 -z-10"></div>
+      <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-primary/20 to-primary-100 -z-10"></div>
       
       <!-- Dekorativní prvky -->
       <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-40">
@@ -15,7 +15,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Účetnictví pro <span class="text-primary">OSVČ</span> bez zbytečného stresu
+              Účetnictví pro OSVČ v <span class="text-primary">Blansku</span> i celé ČR online
             </h1>
             <p class="text-lg md:text-xl text-gray-700 mb-8">
               Profesionální vedení účetnictví a daňové poradenství pro OSVČ. Soustřeďte se na své podnikání, o papírování se postarám za vás.
@@ -25,17 +25,18 @@
                 to="#kontakt" 
                 color="primary"
                 size="xl"
-                class="shadow-md text-white"
+                class="shadow-md text-white px-3 py-3 rounded-lg
+                transition-transform duration-300 ease-in-out hover:-translate-y-1"
               >
                 <UIcon name="i-heroicons-envelope" class="mr-2" />
                 Nezávazná konzultace
               </UButton>
               <UButton 
-                to="/sluzby" 
-                color="white"
+                to="/ucetni-sluzby-osvc" 
                 variant="outline"
                 size="xl"
-                class="border-2"
+                class="shadow-md bg-white text-primary px-3 py-3 rounded-lg
+                transition-transform duration-300 ease-in-out hover:-translate-y-1"
               >
                 <UIcon name="i-heroicons-information-circle" class="mr-2" />
                 Nabídka služeb
@@ -61,24 +62,17 @@
           <div class="hidden md:block">
             <img 
               src="/img/hero-image.webp" 
-              alt="Účetní služby pro OSVČ" 
+              alt="Účetnictví pro OSVČ v Blansku i online" 
               class="w-full h-auto rounded-2xl"
             />
           </div>
         </div>
       </div>
       
-      <!-- Vlnka na konci sekce -->
-      <!-- <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-0">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
-        </svg>
-      </div> -->
     </section>
 
     <!-- Přehled služeb -->
     <section id="sluzby" class="py-16 md:py-24 relative overflow-hidden">
-      <!-- Přidané dekorativní prvky -->
       <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-30">
         <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-primary/10 filter blur-3xl"></div>
         <div class="absolute top-1/4 right-10 w-72 h-72 rounded-full bg-indigo-200/30 filter blur-3xl"></div>
@@ -114,7 +108,7 @@
                 </li>
               </ul>
               <UButton 
-                to="/sluzby#ucetnictvi" 
+                to="/ucetni-sluzby-osvc#ucetnictvi" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -131,7 +125,7 @@
                 <h3 class="text-xl font-bold mb-4">Vedení účetnictví</h3>
                 <p class="text-gray-600 mb-6">Komplexní zpracování účetnictví nebo daňové evidence pro vaše podnikání.</p>
                 <UButton 
-                  to="/sluzby#ucetnictvi" 
+                  to="/ucetni-sluzby-osvc#ucetnictvi" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -165,7 +159,7 @@
                 </li>
               </ul>
               <UButton 
-                to="/sluzby#dane" 
+                to="/ucetni-sluzby-osvc#dane" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -182,7 +176,7 @@
                 <h3 class="text-xl font-bold mb-4">Daňová přiznání</h3>
                 <p class="text-gray-600 mb-6">Zpracování všech typů daňových přiznání pro OSVČ a zajištění jejich včasného podání.</p>
                 <UButton 
-                  to="/sluzby#dane" 
+                  to="/ucetni-sluzby-osvc#dane" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -216,7 +210,7 @@
                 </li>
               </ul>
               <UButton 
-                to="/sluzby#poradenstvi" 
+                to="/ucetni-sluzby-osvc#poradenstvi" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -233,7 +227,7 @@
                 <h3 class="text-xl font-bold mb-4">Účetní poradenství</h3>
                 <p class="text-gray-600 mb-6">Odborné konzultace a poradenství v oblasti účetnictví, daní a finančního plánování.</p>
                 <UButton 
-                  to="/sluzby#poradenstvi" 
+                  to="/ucetni-sluzby-osvc#poradenstvi" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -246,24 +240,12 @@
           </ClientOnly>
         </div>
         
-        <!-- REMOVE FOR DEMO -->
-        <!-- <div class="text-center mt-12">
-          <UButton 
-            to="/cenik" 
-            color="primary"
-            size="lg"
-            class="shadow-md text-white"
-          >
-            <UIcon name="i-heroicons-currency-euro" class="mr-2" />
-            Zobrazit ceník služeb
-          </UButton>
-        </div> -->
         <div class="text-center mt-12">
           <UButton 
-            to="/sluzby" 
+            to="/ucetni-sluzby-osvc" 
             color="primary"
             size="lg"
-            class="shadow-md text-white"
+            class="shadow-md text-white transition-transform duration-300 ease-in-out hover:-translate-y-1"
           >
             <UIcon name="i-heroicons-information-circle" class="mr-2" />
             Více informací
@@ -359,7 +341,7 @@
             
             <div class="flex flex-col sm:flex-row gap-4">
               <UButton 
-                to="/sluzby" 
+                to="/ucetni-sluzby-osvc" 
                 color="primary"
                 class="text-white"
               >
@@ -452,18 +434,17 @@
             </div>
           </div>
         </div>
-    
-        <!-- <div class="text-center mt-8">
-          <UButton 
-            to="/reference" 
-            color="primary"
-            variant="ghost"
-            class="shadow-sm"
-          >
-            <UIcon name="i-heroicons-chat-bubble-left-right" class="mr-2" />
-            Zobrazit všechny reference
-          </UButton>
-        </div> -->
+      </div>
+      <div class="text-center mt-8">
+        <UButton 
+          to="/reference-klientu" 
+          color="primary" 
+          size="lg" 
+          class="shadow-md text-white transition-transform duration-300 ease-in-out hover:-translate-y-1"
+        >
+          <UIcon name="i-heroicons-users" class="mr-2" />
+          Všechny reference
+        </UButton>
       </div>
     </section>
     
@@ -553,15 +534,6 @@
                 </div>
               </div>
             </div>
-            
-            <!-- <div class="space-x-4">
-              <a href="https://www.facebook.com/" target="_blank" class="inline-flex items-center justify-center w-10 h-10 bg-white/15 rounded-full text-white hover:bg-white hover:text-primary transition-colors">
-                <UIcon name="i-heroicons-chat-bubble-bottom-center-text" />
-              </a>
-              <a href="https://www.linkedin.com/" target="_blank" class="inline-flex items-center justify-center w-10 h-10 bg-white/15 rounded-full text-white hover:bg-white hover:text-primary transition-colors">
-                <UIcon name="i-heroicons-link" />
-              </a>
-            </div> -->
             
             <!-- Vertikální oddělovač pro desktop -->
             <div class="hidden md:block absolute right-0 top-0 bottom-0 w-px bg-white/20"></div>
@@ -656,6 +628,111 @@
 
 <script setup>
 import { ref } from 'vue'
+
+useSeoMeta({
+  title: 'Účetnictví pro OSVČ Blansko a online | Martina Navrátilová',
+  description: 'Hledáte spolehlivé účetnictví pro OSVČ v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňová přiznání a poradenství. Zajistěte si klid a ušetřete čas. Kontaktujte mě pro nezávaznou konzultaci.',
+  ogTitle: 'Účetnictví pro OSVČ Blansko a online | Martina Navrátilová',
+  ogDescription: 'Hledáte spolehlivé účetnictví pro OSVČ v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňová přiznání a poradenství. Zajistěte si klid a ušetřete čas. Kontaktujte mě pro nezávaznou konzultaci.',
+  ogUrl: 'https://ucetni-blansko.cz',
+  canonical: 'https://ucetni-blansko.cz',
+})
+
+const faqItems = [
+  {
+    label: 'Jak často je potřeba se setkávat osobně?',
+    content: 'Četnost osobních setkání závisí na vašich preferencích a potřebách. Většinu dokumentů lze předávat elektronicky, přesto doporučuji osobní schůzku alespoň jednou za čtvrtletí pro konzultaci a předání fyzických dokumentů.'
+  },
+  {
+    label: 'Jaké doklady od vás potřebuji?',
+    content: 'Pro vedení účetnictví jsou potřeba všechny doklady související s vaším podnikáním – faktury vydané i přijaté, pokladní doklady, bankovní výpisy, smlouvy, doklady o majetku apod. Při první konzultaci vám poskytnu podrobný seznam všech potřebných dokladů.'
+  },
+  {
+    label: 'Jak dlouho dopředu je třeba se ozvat před daňovým přiznáním?',
+    content: 'Pro zpracování daňového přiznání doporučuji kontaktovat mě nejpozději 1 měsíc před termínem podání. V případě složitějších přiznání nebo při první spolupráci je vhodné začít ještě dříve, aby byl dostatek času na přípravu všech podkladů a optimalizaci.'
+  },
+  {
+    label: 'Mohu s vámi komunikovat jen online?',
+    content: 'Ano, veškerá komunikace může probíhat online. Doklady lze zasílat elektronicky (e-mailem nebo přes sdílené úložiště), konzultace mohou probíhat telefonicky nebo přes videokonferenci (Zoom, Teams). Pro maximální pohodlí se snažím přizpůsobit vašim preferencím.'
+  },
+  {
+    label: 'Kolik stojí vaše služby?',
+    content: 'Ceny za služby se odvíjejí od rozsahu spolupráce, množství dokladů a složitosti vašeho účetnictví. Pro přesnou kalkulaci mě prosím kontaktujte se specifickými požadavky na vaše účetnictví.'
+  }
+];
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify([
+        {
+          '@context': 'https://schema.org',
+          '@type': 'AccountingService',
+          'name': 'Účetnictví pro OSVČ - Martina Navrátilová',
+          'description': 'Profesionální účetní služby pro OSVČ v Blansku a celé ČR. Nabízím vedení účetnictví, daňové poradenství a zpracování daňových přiznání.',
+          'provider': {
+            '@type': 'LocalBusiness',
+            'name': 'Martina Navrátilová',
+            'image': '/img/accountant-portrait.webp',
+            'telephone': '+420 774 069 617',
+            'email': 'Navratilova.ucto@seznam.cz',
+            'address': {
+              '@type': 'PostalAddress',
+              'streetAddress': 'Okružní 17',
+              'addressLocality': 'Blansko',
+              'postalCode': '678 01',
+              'addressCountry': 'CZ'
+            },
+            'geo': {
+              '@type': 'GeoCoordinates',
+              'latitude': '49.3744558',
+              'longitude': '16.653352'
+            },
+            'openingHoursSpecification': [
+              {
+                '@type': 'OpeningHoursSpecification',
+                'dayOfWeek': [
+                  'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday'
+                ],
+                'opens': '09:00',
+                'closes': '17:00'
+              }
+            ],
+            'areaServed': {
+              '@type': 'Country',
+              'name': 'Czech Republic'
+            }
+          },
+          'serviceType': [
+            'Vedení účetnictví',
+            'Daňová evidence',
+            'Zpracování daňových přiznání',
+            'Daňové poradenství',
+            'Mzdové účetnictví'
+          ]
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          'mainEntity': faqItems.map(item => ({
+            '@type': 'Question',
+            'name': item.label,
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': item.content
+            }
+          }))
+        }
+      ])
+    }
+  ]
+})
+
 const featuredTestimonial = {
   name: 'Yasmin May',
   role: 'Podnikatelka v oblasti sociálních sítí',
@@ -768,33 +845,7 @@ const submitForm = async () => {
   }
 };
 
-const faqItems = [
-  {
-    label: 'Jak často je potřeba se setkávat osobně?',
-    content: 'Četnost osobních setkání závisí na vašich preferencích a potřebách. Většinu dokumentů lze předávat elektronicky, přesto doporučuji osobní schůzku alespoň jednou za čtvrtletí pro konzultaci a předání fyzických dokumentů.'
-  },
-  {
-    label: 'Jaké doklady od vás potřebuji?',
-    content: 'Pro vedení účetnictví jsou potřeba všechny doklady související s vaším podnikáním – faktury vydané i přijaté, pokladní doklady, bankovní výpisy, smlouvy, doklady o majetku apod. Při první konzultaci vám poskytnu podrobný seznam všech potřebných dokladů.'
-  },
-  {
-    label: 'Jak dlouho dopředu je třeba se ozvat před daňovým přiznáním?',
-    content: 'Pro zpracování daňového přiznání doporučuji kontaktovat mě nejpozději 1 měsíc před termínem podání. V případě složitějších přiznání nebo při první spolupráci je vhodné začít ještě dříve, aby byl dostatek času na přípravu všech podkladů a optimalizaci.'
-  },
-  {
-    label: 'Mohu s vámi komunikovat jen online?',
-    content: 'Ano, veškerá komunikace může probíhat online. Doklady lze zasílat elektronicky (e-mailem nebo přes sdílené úložiště), konzultace mohou probíhat telefonicky nebo přes videokonferenci (Zoom, Teams). Pro maximální pohodlí se snažím přizpůsobit vašim preferencím.'
-  },
-  {
-    label: 'Kolik stojí vaše služby?',
-    content: 'Ceny za služby se odvíjejí od rozsahu spolupráce, množství dokladů a složitosti vašeho účetnictví. Pro přesnou kalkulaci mě prosím kontaktujte se specifickými požadavky na vaše účetnictví.'
-  }
-];
-
-definePageMeta({
-  title: 'Účetní služby pro OSVČ Blansko | Martin Navrátilová',
-  description: 'Profesionální vedení účetnictví a daňové poradenství pro osoby samostatně výdělečně činné. Kompletní účetní služby pro OSVČ.'
-});
+const activeTab = ref('ucetnictvi');
 </script>
 
 <style scoped>
