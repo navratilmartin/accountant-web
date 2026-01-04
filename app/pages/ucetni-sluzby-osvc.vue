@@ -167,7 +167,7 @@
                   <div class="flex">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                     <div>
-                      <h3 class="font-medium mb-1">Podvojné účetnictví</h3>
+                      <h3 class="font-medium mb-1">Účetnictví</h3>
                       <p class="text-gray-600">Komplexní zpracování účetnictví podle aktuálních účetních standardů a legislativy.</p>
                     </div>
                   </div>
@@ -210,7 +210,7 @@
                     <div class="flex">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                       <div>
-                        <h3 class="font-medium mb-1">Podvojné účetnictví</h3>
+                        <h3 class="font-medium mb-1">Účetnictví</h3>
                         <p class="text-gray-600">Komplexní zpracování účetnictví podle aktuálních účetních standardů a legislativy.</p>
                       </div>
                     </div>
