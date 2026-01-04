@@ -66,12 +66,12 @@
           <ClientOnly>
             <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 text-center hover:shadow-lg transition-shadow">
               <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-lg mb-6">
-                <UIcon name="i-heroicons-document-text" class="text-primary text-3xl" />
+                <UIcon name="i-heroicons-building-office-2" class="text-primary text-3xl" />
               </div>
-              <h3 class="text-xl font-bold mb-4">Daňová přiznání</h3>
-              <p class="text-gray-600 mb-6">Zpracování všech typů daňových přiznání pro OSVČ a zajištění jejich včasného podání.</p>
+              <h3 class="text-xl font-bold mb-4">Zastupování na úřadech</h3>
+              <p class="text-gray-600 mb-6">Zajišťuji styk s veškerými úřady a institucemi spojenými s vaším podnikáním.</p>
               <UButton 
-                to="/ucetni-sluzby-osvc#dane" 
+                to="/ucetni-sluzby-osvc#zastupovani" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -83,12 +83,12 @@
             <template #fallback>
               <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 text-center">
                 <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-lg mb-6">
-                  <UIcon name="i-heroicons-document-text" class="text-primary text-3xl" />
+                  <UIcon name="i-heroicons-building-office-2" class="text-primary text-3xl" />
                 </div>
-                <h3 class="text-xl font-bold mb-4">Daňová přiznání</h3>
-                <p class="text-gray-600 mb-6">Zpracování všech typů daňových přiznání pro OSVČ a zajištění jejich včasného podání.</p>
+                <h3 class="text-xl font-bold mb-4">Zastupování na úřadech</h3>
+                <p class="text-gray-600 mb-6">Zajišťuji styk s veškerými úřady a institucemi spojenými s vaším podnikáním.</p>
                 <UButton 
-                  to="/ucetni-sluzby-osvc#dane" 
+                  to="/ucetni-sluzby-osvc#zastupovani" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -237,91 +237,91 @@
           </div>
         </div>
 
-        <!-- Daňová přiznání -->
-        <div id="dane" class="mb-16 scroll-mt-24">
+        <!-- Zastupování na úřadech -->
+        <div id="zastupovani" class="mb-16 scroll-mt-24">
           <div class="max-w-4xl mx-auto">
             <ClientOnly>
               <div class="flex items-center mb-6">
-                <UIcon name="i-heroicons-document-text" class="text-primary text-3xl mr-4" />
-                <h2 class="text-2xl md:text-3xl font-bold">Daňová přiznání</h2>
+                <UIcon name="i-heroicons-building-office-2" class="text-primary text-3xl mr-4" />
+                <h2 class="text-2xl md:text-3xl font-bold">Zastupování na úřadech</h2>
               </div>
 
               <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
-                <p class="mb-4">Zpracuji za vás všechny typy daňových přiznání včas a správně. Díky znalosti aktuální daňové legislativy dokážu navrhnout optimální řešení pro vaše daňové povinnosti.</p>
+                <p class="mb-4">Zajišťuji styk s veškerými úřady a institucemi, které jsou spojené s vaším podnikáním. Můžete se spolehnout, že vaše záležitosti budou vyřízeny profesionálně a včas.</p>
                 
                 <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div class="flex">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                     <div>
-                      <h3 class="font-medium mb-1">Daň z příjmů fyzických osob</h3>
-                      <p class="text-gray-600">Kompletní zpracování daňového přiznání pro OSVČ včetně příloh a přehledů pro OSSZ a ZP.</p>
+                      <h3 class="font-medium mb-1">Finanční úřad</h3>
+                      <p class="text-gray-600">Komunikace s finančním úřadem, podávání písemností, vyřizování dodatečných výzev a dotazů.</p>
                     </div>
                   </div>
                   
                   <div class="flex">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                     <div>
-                      <h3 class="font-medium mb-1">Daň z příjmů právnických osob</h3>
-                      <p class="text-gray-600">Přiznání k dani z příjmů pro s.r.o. a další právnické osoby.</p>
+                      <h3 class="font-medium mb-1">Správa sociálního zabezpečení</h3>
+                      <p class="text-gray-600">Vyřizování záležitostí týkajících se odvodu pojistného na sociální zabezpečení.</p>
                     </div>
                   </div>
 
                   <div class="flex">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                     <div>
-                      <h3 class="font-medium mb-1">Silniční daň</h3>
-                      <p class="text-gray-600">Výpočet a zpracování přiznání k silniční dani pro firemní vozidla.</p>
+                      <h3 class="font-medium mb-1">Zdravotní pojišťovna</h3>
+                      <p class="text-gray-600">Komunikace se zdravotními pojišťovnami ohledně odvodů pojistného.</p>
                     </div>
                   </div>
 
                   <div class="flex">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                     <div>
-                      <h3 class="font-medium mb-1">Další daňová přiznání</h3>
-                      <p class="text-gray-600">Zpracování dalších typů daňových přiznání podle vašich potřeb.</p>
+                      <h3 class="font-medium mb-1">Další instituce</h3>
+                      <p class="text-gray-600">Zastupování při jednáních s dalšími úřady a institucemi podle potřeby.</p>
                     </div>
                   </div>
                 </div>
               </div>
               <template #fallback>
                 <div class="flex items-center mb-6">
-                  <UIcon name="i-heroicons-document-text" class="text-primary text-3xl mr-4" />
-                  <h2 class="text-2xl md:text-3xl font-bold">Daňová přiznání</h2>
+                  <UIcon name="i-heroicons-building-office-2" class="text-primary text-3xl mr-4" />
+                  <h2 class="text-2xl md:text-3xl font-bold">Zastupování na úřadech</h2>
                 </div>
 
                 <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm">
-                  <p class="mb-4">Zpracuji za vás všechny typy daňových přiznání včas a správně. Díky znalosti aktuální daňové legislativy dokážu navrhnout optimální řešení pro vaše daňové povinnosti.</p>
+                  <p class="mb-4">Zajišťuji styk s veškerými úřady a institucemi, které jsou spojené s vaším podnikáním. Můžete se spolehnout, že vaše záležitosti budou vyřízeny profesionálně a včas.</p>
                   
                   <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="flex">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                       <div>
-                        <h3 class="font-medium mb-1">Daň z příjmů fyzických osob</h3>
-                        <p class="text-gray-600">Kompletní zpracování daňového přiznání pro OSVČ včetně příloh a přehledů pro OSSZ a ZP.</p>
+                        <h3 class="font-medium mb-1">Finanční úřad</h3>
+                        <p class="text-gray-600">Komunikace s finančním úřadem, podávání písemností, vyřizování dodatečných výzev a dotazů.</p>
                       </div>
                     </div>
                     
                     <div class="flex">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                       <div>
-                        <h3 class="font-medium mb-1">Daň z příjmů právnických osob</h3>
-                        <p class="text-gray-600">Přiznání k dani z příjmů pro s.r.o. a další právnické osoby.</p>
+                        <h3 class="font-medium mb-1">Správa sociálního zabezpečení</h3>
+                        <p class="text-gray-600">Vyřizování záležitostí týkajících se odvodu pojistného na sociální zabezpečení.</p>
                       </div>
                     </div>
 
                     <div class="flex">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                       <div>
-                        <h3 class="font-medium mb-1">Silniční daň</h3>
-                        <p class="text-gray-600">Výpočet a zpracování přiznání k silniční dani pro firemní vozidla.</p>
+                        <h3 class="font-medium mb-1">Zdravotní pojišťovna</h3>
+                        <p class="text-gray-600">Komunikace se zdravotními pojišťovnami ohledně odvodů pojistného.</p>
                       </div>
                     </div>
 
                     <div class="flex">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                       <div>
-                        <h3 class="font-medium mb-1">Další daňová přiznání</h3>
-                        <p class="text-gray-600">Zpracování dalších typů daňových přiznání podle vašich potřeb.</p>
+                        <h3 class="font-medium mb-1">Další instituce</h3>
+                        <p class="text-gray-600">Zastupování při jednáních s dalšími úřady a institucemi podle potřeby.</p>
                       </div>
                     </div>
                   </div>
@@ -528,7 +528,7 @@
           <h2 class="text-2xl md:text-3xl font-bold mb-4">Potřebujete některou z mých služeb?</h2>
           <p class="text-lg mb-8">Neváhejte mě kontaktovat pro nezávaznou konzultaci nebo cenovou nabídku.</p>
           <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <UButton to="/kontakt-blansko" color="primary" class="text-white" size="lg">
+            <UButton to="/#kontakt" color="primary" class="text-white" size="lg">
               Kontaktujte mě
             </UButton>
           </div>
@@ -546,6 +546,7 @@ useSeoMeta({
   description: 'Nabízím komplexní účetní služby pro OSVČ v Blansku i online. Specializuji se na vedení účetnictví, zpracování daňových přiznání a daňovou optimalizaci. Objednejte si konzultaci.',
   ogTitle: 'Účetní služby pro OSVČ Blansko a online | Martina Navrátilová',
   ogDescription: 'Nabízím komplexní účetní služby pro OSVČ v Blansku i online. Specializuji se na vedení účetnictví, zpracování daňových přiznání a daňovou optimalizaci. Objednejte si konzultaci.',
+  ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
   ogUrl: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
   canonical: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
 });
