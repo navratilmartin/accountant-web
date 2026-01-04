@@ -565,57 +565,24 @@
         </div>
         
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <ClientOnly>
-            <div class="text-center p-6">
-              <div class="text-4xl md:text-5xl font-bold mb-2">8+</div>
-              <p class="text-lg opacity-80">Let praxe</p>
-            </div>
-            <template #fallback>
-              <div class="text-center p-6">
-                <div class="text-4xl md:text-5xl font-bold mb-2">8+</div>
-                <p class="text-lg opacity-80">Let praxe</p>
-              </div>
-            </template>
-          </ClientOnly>
-          
-          <ClientOnly>
-            <div class="text-center p-6">
-              <div class="text-4xl md:text-5xl font-bold mb-2">350+</div>
-              <p class="text-lg opacity-80">Spokojených klientů</p>
-            </div>
-            <template #fallback>
-              <div class="text-center p-6">
-                <div class="text-4xl md:text-5xl font-bold mb-2">350+</div>
-                <p class="text-lg opacity-80">Spokojených klientů</p>
-              </div>
-            </template>
-          </ClientOnly>
-          
-          <ClientOnly>
-            <div class="text-center p-6">
-              <div class="text-4xl md:text-5xl font-bold mb-2">1200+</div>
-              <p class="text-lg opacity-80">Zpracovaných daňových přiznání</p>
-            </div>
-            <template #fallback>
-              <div class="text-center p-6">
-                <div class="text-4xl md:text-5xl font-bold mb-2">1200+</div>
-                <p class="text-lg opacity-80">Zpracovaných daňových přiznání</p>
-              </div>
-            </template>
-          </ClientOnly>
-          
-          <ClientOnly>
-            <div class="text-center p-6">
-              <div class="text-4xl md:text-5xl font-bold mb-2">96%</div>
-              <p class="text-lg opacity-80">Míra spokojenosti</p>
-            </div>
-            <template #fallback>
-              <div class="text-center p-6">
-                <div class="text-4xl md:text-5xl font-bold mb-2">96%</div>
-                <p class="text-lg opacity-80">Míra spokojenosti</p>
-              </div>
-            </template>
-          </ClientOnly>
+          <div class="text-center p-6">
+            <div class="text-4xl md:text-5xl font-bold mb-2">30+</div>
+            <p class="text-lg opacity-80">Let praxe</p>
+          </div>
+          <div class="text-center p-6">
+            <div class="text-4xl md:text-5xl font-bold mb-2">150+</div>
+            <p class="text-lg opacity-80">Spokojených klientů</p>
+          </div>
+        <div class="text-center p-6">
+        
+            <div class="text-4xl md:text-5xl font-bold mb-2">10 000+</div>
+            <p class="text-lg opacity-80">Zaúčtovaných dokladů</p>
+            
+          </div>
+          <div class="text-center p-6">
+            <div class="text-4xl md:text-5xl font-bold mb-2">96%</div>
+            <p class="text-lg opacity-80">Míra spokojenosti</p>
+          </div>
         </div>
       </div>
     </section>
@@ -627,11 +594,11 @@
           <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="bg-gradient-to-br from-primary to-blue-800 text-white p-8 md:p-12 flex items-center">
               <div>
-                <h2 class="text-2xl md:text-3xl font-bold mb-4">Připojte se k více než 350 spokojeným klientům</h2>
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Připojte se k více než 150 spokojeným klientům</h2>
                 <p class="text-lg opacity-90 mb-8">Nechte si nezávazně zpracovat nabídku účetních služeb na míru pro vaše podnikání.</p>
                 <div class="flex flex-col sm:flex-row gap-4">
                   <UButton 
-                    to="/kontakt-blansko" 
+                    to="/#kontakt" 
                     color="white"
                     size="lg"
                     class="shadow-md"

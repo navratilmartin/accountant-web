@@ -54,8 +54,8 @@
                 <div class="text-sm text-gray-600">Spokojených klientů</div>
               </div>
               <div class="text-center">
-                <div class="text-3xl font-bold text-primary mb-1">1200+</div>
-                <div class="text-sm text-gray-600">Daňových přiznání</div>
+                <div class="text-3xl font-bold text-primary mb-1">10 000+</div>
+                <div class="text-sm text-gray-600">Zaúčtovaných dokladů</div>
               </div>
             </div>
           </div>
@@ -365,15 +365,15 @@
         
         <!-- Featured testimonial -->
         <div class="overflow-hidden mb-16 ring-1 ring-gray-200 shadow-lg rounded-xl bg-gradient-to-br from-white to-primary/5">
-          <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="grid grid-cols-1 md:grid-cols-2 md:h-[350px]">
             <!-- Fotografie klienta -->
-            <div class="h-60 md:h-full relative">
+            <div class="h-80 md:h-full relative overflow-hidden">
               <img 
                 :src="featuredTestimonial.avatar" 
                 :alt="`${featuredTestimonial.name} - spokojený klient`" 
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover featured-testimonial-img"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6 md:pb-8 lg:pb-10">
                 <div class="text-white">
                   <h3 class="font-bold text-xl mb-1">{{ featuredTestimonial.name }}</h3>
                   <p class="text-white/90 text-sm">{{ featuredTestimonial.role }}</p>
@@ -381,11 +381,11 @@
               </div>
             </div>
             <!-- Obsah reference -->
-            <div class="p-8 md:p-10 flex flex-col justify-center from-primary-50 to-white">
+            <div class="p-8 md:p-10 md:pt-0 lg:pt-10 flex flex-col justify-center from-primary-50 to-white">
               <div class="mb-6">
                 <UIcon name="i-heroicons-chat-bubble-left-quote" class="text-5xl text-primary/20" />
               </div>
-              <blockquote class="text-lg md:text-xl font-light leading-relaxed mb-8 text-gray-700">
+              <blockquote class="text-lg md:text-md lg:text-xl font-light leading-relaxed mb-8 text-gray-700">
                 "{{ featuredTestimonial.quote }}"
               </blockquote>
               <div class="flex items-center space-x-1">
@@ -518,7 +518,7 @@
                 </div>
                 <div>
                   <h3 class="font-semibold mb-1 text-white">E-mail</h3>
-                  <p class="text-white opacity-80">Navratilova.ucto@seznam.cz</p>
+                  <p class="text-white opacity-80">Navratilova@ucetni-blansko.cz</p>
                   <p class="text-sm text-white opacity-60 mt-1">Odpovídám do 24 hodin</p>
                 </div>
               </div>
@@ -677,7 +677,7 @@ useHead({
             'name': 'Martina Navrátilová',
             'image': '/img/accountant-portrait.webp',
             'telephone': '+420 774 069 617',
-            'email': 'Navratilova.ucto@seznam.cz',
+            'email': 'Navratilova@ucetni-blansko.cz',
             'address': {
               '@type': 'PostalAddress',
               'streetAddress': 'Okružní 17',
@@ -858,5 +858,27 @@ const activeTab = ref('ucetnictvi');
 }
 .border-primary {
   border-color: var(--primary-color);
+}
+
+.featured-testimonial-img {
+  object-position: left -10px;
+}
+
+@media (min-width: 500px) {
+  .featured-testimonial-img {
+    object-position: left -65px;
+  }
+}
+
+@media (min-width: 768px) {
+  .featured-testimonial-img {
+    object-position: left -15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-testimonial-img {
+    object-position: left -60px;
+  }
 }
 </style>

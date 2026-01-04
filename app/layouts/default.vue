@@ -103,7 +103,7 @@
             <h3 class="font-semibold text-lg mb-4">Kontaktní údaje</h3>
             <div class="space-y-2">
               <p>Martina Navrátilová</p>
-              <p>E-mail: navratilova.ucto@seznam.cz</p>
+              <p>E-mail: navratilova@ucetni-blansko.cz</p>
               <p>Telefon: +420 774 069 617</p>
             </div>
           </div>
