@@ -810,7 +810,7 @@ const submitForm = async () => {
   
   try {
     // Reálné odeslání formuláře na server
-    const { data, error } = await useFetch('/api/contact', {
+    const response = await $fetch('/api/contact', {
       method: 'POST',
       body: {
         name: form.value.name,
@@ -821,7 +821,7 @@ const submitForm = async () => {
     });
     
     // Zpracování odpovědi
-    if (error.value) {
+    if (!response || response.statusCode !== 200) {
       throw new Error('Došlo k chybě při odesílání zprávy');
     }
     
