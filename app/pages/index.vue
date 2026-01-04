@@ -15,10 +15,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Účetnictví pro OSVČ v <span class="text-primary">Blansku</span> i celé ČR online
+              Účetnictví pro OSVČ a firmy v <span class="text-primary">Blansku</span> i celé ČR online
             </h1>
             <p class="text-lg md:text-xl text-gray-700 mb-8">
-              Profesionální vedení účetnictví a daňové poradenství pro OSVČ. Soustřeďte se na své podnikání, o papírování se postarám za vás.
+              Profesionální vedení účetnictví a daňové poradenství pro OSVČ a právnické osoby. Soustřeďte se na své podnikání, o papírování se postarám za vás.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <UButton 
@@ -62,7 +62,7 @@
           <div class="hidden md:block">
             <img 
               src="/img/hero-image.webp" 
-              alt="Účetnictví pro OSVČ v Blansku i online" 
+              alt="Účetnictví pro OSVČ a firmy v Blansku i online" 
               class="w-full h-auto rounded-2xl"
             />
           </div>
@@ -263,7 +263,7 @@
               <div class="absolute -z-10 w-full h-full -top-4 -right-4 bg-primary/10 rounded-xl"></div>
               <img
                 src="/img/accountant-portrait.webp"
-                alt="Martina Navrátilová - Účetní pro OSVČ"
+                alt="Martina Navrátilová - Účetní pro OSVČ a firmy"
                 class="rounded-xl shadow-lg z-10 relative"
                 width="400"
               />
@@ -273,7 +273,7 @@
                 <div class="absolute -z-10 w-full h-full -top-4 -right-4 bg-primary/10 rounded-xl"></div>
                 <img
                   src="/img/accountant-portrait.webp"
-                  alt="Martina Navrátilová - Účetní pro OSVČ"
+                  alt="Martina Navrátilová - Účetní pro OSVČ a firmy"
                   class="rounded-xl shadow-lg z-10 relative"
                   width="600"
                   height="400"
@@ -286,7 +286,7 @@
             <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium mb-4">O mně</span>
             <h2 class="text-2xl md:text-4xl font-bold mb-6">Proč se mnou spolupracovat?</h2>
             <p class="text-lg text-gray-700 mb-6">
-              Jmenuji se Martina Navrátilová a již více než 30 let pomáhám podnikatelům a OSVČ s vedením účetnictví, daňovou evidencí a daňovými přiznáními. Mám bohaté zkušenosti z různých oborů podnikání, od řemeslníků přes IT profesionály až po umělce na volné noze.
+              Jmenuji se Martina Navrátilová a již více než 30 let pomáhám podnikatelům, OSVČ a právnickým osobám s vedením účetnictví a daňovou evidencí. Mám bohaté zkušenosti z různých oborů podnikání, od řemeslníků přes IT profesionály až po umělce na volné noze.
             </p>
             
             <div class="space-y-4 mb-8">
@@ -294,7 +294,7 @@
                 <UIcon name="i-heroicons-briefcase" class="text-primary text-xl mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <h4 class="font-semibold mb-1">Bohaté zkušenosti</h4>
-                  <p class="text-gray-600">Více než 30 let praxe v účetnictví pro OSVČ a menší firmy v různých odvětvích.</p>
+                  <p class="text-gray-600">Více než 30 let praxe v účetnictví pro OSVČ a právnické osoby v různých odvětvích.</p>
                 </div>
               </div>
 
@@ -630,10 +630,10 @@
 import { ref } from 'vue'
 
 useSeoMeta({
-  title: 'Účetnictví pro OSVČ Blansko a online | Martina Navrátilová',
-  description: 'Hledáte spolehlivé účetnictví pro OSVČ v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňová přiznání a poradenství. Zajistěte si klid a ušetřete čas. Kontaktujte mě pro nezávaznou konzultaci.',
-  ogTitle: 'Účetnictví pro OSVČ Blansko a online | Martina Navrátilová',
-  ogDescription: 'Hledáte spolehlivé účetnictví pro OSVČ v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňová přiznání a poradenství. Zajistěte si klid a ušetřete čas. Kontaktujte mě pro nezávaznou konzultaci.',
+  title: 'Účetnictví pro OSVČ a firmy Blansko a online | Martina Navrátilová',
+  description: 'Hledáte spolehlivé účetnictví pro OSVČ nebo právnické osoby v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňovou evidenci a odborné poradenství. Zajistěte si klid a ušetřete čas.',
+  ogTitle: 'Účetnictví pro OSVČ a firmy Blansko a online | Martina Navrátilová',
+  ogDescription: 'Hledáte spolehlivé účetnictví pro OSVČ nebo právnické osoby v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňovou evidenci a odborné poradenství. Zajistěte si klid a ušetřete čas.',
   ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
   ogUrl: 'https://ucetni-blansko.cz',
   canonical: 'https://ucetni-blansko.cz',
@@ -670,8 +670,8 @@ useHead({
         {
           '@context': 'https://schema.org',
           '@type': 'AccountingService',
-          'name': 'Účetnictví pro OSVČ - Martina Navrátilová',
-          'description': 'Profesionální účetní služby pro OSVČ v Blansku a celé ČR. Nabízím vedení účetnictví, daňové poradenství a zpracování daňových přiznání.',
+          'name': 'Účetnictví pro OSVČ a firmy - Martina Navrátilová',
+          'description': 'Profesionální účetní služby pro OSVČ a právnické osoby v Blansku a celé ČR. Nabízím vedení účetnictví, daňovou evidenci a odborné poradenství.',
           'provider': {
             '@type': 'LocalBusiness',
             'name': 'Martina Navrátilová',
@@ -712,9 +712,9 @@ useHead({
           'serviceType': [
             'Vedení účetnictví',
             'Daňová evidence',
-            'Zpracování daňových přiznání',
             'Daňové poradenství',
-            'Mzdové účetnictví'
+            'Mzdové účetnictví',
+            'Zastupování na úřadech'
           ]
         },
         {

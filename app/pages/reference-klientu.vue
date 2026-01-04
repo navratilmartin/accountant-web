@@ -11,8 +11,8 @@
       <div class="container-custom relative z-10">
         <div class="text-center max-w-3xl mx-auto">
           <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium mb-4">Reference</span>
-          <h1 class="text-3xl md:text-5xl font-bold mb-6">Reference spokojených klientů - Účetnictví pro OSVČ</h1>
-          <p class="text-lg text-gray-700">Podívejte se na zkušenosti klientů, kteří využívají mých služeb v oblasti vedení účetnictví, daňových přiznání a účetního poradenství.</p>
+          <h1 class="text-3xl md:text-5xl font-bold mb-6">Reference spokojených klientů - Účetnictví pro OSVČ a firmy</h1>
+          <p class="text-lg text-gray-700">Podívejte se na zkušenosti klientů, kteří využívají mých služeb v oblasti vedení účetnictví, daňové evidence a účetního poradenství.</p>
         </div>
       </div>
     </section>
@@ -629,7 +629,7 @@
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 mt-1 mr-3 flex-shrink-0" />
-                    <span>Včasné zpracování a podání daňových přiznání</span>
+                    <span>Včasnou přípravu podkladů pro daňové účely</span>
                   </li>
                   <li class="flex items-start">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 mt-1 mr-3 flex-shrink-0" />
@@ -655,10 +655,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Reference | Účetnictví pro OSVČ Blansko | Martina Navrátilová',
-  description: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ, daňové poradenství a vedení účetnictví.',
-  ogTitle: 'Reference | Účetnictví pro OSVČ Blansko | Martina Navrátilová',
-  ogDescription: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ, daňové poradenství a vedení účetnictví.',
+  title: 'Reference | Účetnictví pro OSVČ a firmy Blansko | Martina Navrátilová',
+  description: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ a právnické osoby, daňové poradenství a vedení účetnictví.',
+  ogTitle: 'Reference | Účetnictví pro OSVČ a firmy Blansko | Martina Navrátilová',
+  ogDescription: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ a právnické osoby, daňové poradenství a vedení účetnictví.',
   ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
   ogUrl: 'https://ucetni-blansko.cz/reference-klientu',
   canonical: 'https://ucetni-blansko.cz/reference-klientu',

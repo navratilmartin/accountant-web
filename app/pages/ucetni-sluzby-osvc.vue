@@ -11,8 +11,8 @@
       <div class="container-custom relative z-10">
         <div class="text-center max-w-3xl mx-auto">
           <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium mb-4">Nabídka služeb</span>
-          <h1 class="text-3xl md:text-5xl font-bold mb-6">Účetní služby pro OSVČ v Blansku i online</h1>
-          <p class="text-lg text-gray-700">Komplexní nabídka účetních služeb a poradenství pro osoby samostatně výdělečně činné. Spolehlivě se postarám o vaše účetnictví, abyste se mohli soustředit na své podnikání.</p>
+          <h1 class="text-3xl md:text-5xl font-bold mb-6">Účetní služby pro OSVČ a firmy v Blansku i online</h1>
+          <p class="text-lg text-gray-700">Komplexní nabídka účetních služeb a poradenství pro osoby samostatně výdělečně činné a právnické osoby. Spolehlivě se postarám o vaše účetnictví, abyste se mohli soustředit na své podnikání.</p>
         </div>
       </div>
     </section>
@@ -22,7 +22,7 @@
       <div class="container-custom">
         <div class="text-center mb-16">
           <h2 class="text-2xl md:text-4xl font-bold mb-4">Jak vám mohu pomoci?</h2>
-          <p class="text-lg max-w-3xl mx-auto text-gray-600">Poskytuji komplexní účetní služby pro OSVČ. Od vedení účetnictví a daňové evidence až po optimalizaci daňových povinností.</p>
+          <p class="text-lg max-w-3xl mx-auto text-gray-600">Poskytuji komplexní účetní služby pro OSVČ a právnické osoby. Od vedení účetnictví a daňové evidence až po optimalizaci daňových povinností.</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -175,8 +175,8 @@
                   <div class="flex">
                     <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                     <div>
-                      <h3 class="font-medium mb-1">Zpracování DPH</h3>
-                      <p class="text-gray-600">Příprava a podání přiznání k DPH, kontrolní hlášení, souhrnná hlášení.</p>
+                      <h3 class="font-medium mb-1">Evidence DPH</h3>
+                      <p class="text-gray-600">Vedení evidence DPH, příprava podkladů pro přiznání k DPH, kontrolní hlášení a souhrnná hlášení.</p>
                     </div>
                   </div>
 
@@ -218,8 +218,8 @@
                     <div class="flex">
                       <UIcon name="i-heroicons-check-circle" class="text-green-500 text-xl flex-shrink-0 mt-1 mr-3" />
                       <div>
-                        <h3 class="font-medium mb-1">Zpracování DPH</h3>
-                        <p class="text-gray-600">Příprava a podání přiznání k DPH, kontrolní hlášení, souhrnná hlášení.</p>
+                        <h3 class="font-medium mb-1">Evidence DPH</h3>
+                        <p class="text-gray-600">Vedení evidence DPH, příprava podkladů pro přiznání k DPH, kontrolní hlášení a souhrnná hlášení.</p>
                       </div>
                     </div>
 
@@ -542,10 +542,10 @@
 import { onMounted } from 'vue';
 
 useSeoMeta({
-  title: 'Účetní služby pro OSVČ Blansko a online | Martina Navrátilová',
-  description: 'Nabízím komplexní účetní služby pro OSVČ v Blansku i online. Specializuji se na vedení účetnictví, zpracování daňových přiznání a daňovou optimalizaci. Objednejte si konzultaci.',
-  ogTitle: 'Účetní služby pro OSVČ Blansko a online | Martina Navrátilová',
-  ogDescription: 'Nabízím komplexní účetní služby pro OSVČ v Blansku i online. Specializuji se na vedení účetnictví, zpracování daňových přiznání a daňovou optimalizaci. Objednejte si konzultaci.',
+  title: 'Účetní služby pro OSVČ a firmy Blansko a online | Martina Navrátilová',
+  description: 'Nabízím komplexní účetní služby pro OSVČ a právnické osoby v Blansku i online. Specializuji se na vedení účetnictví, daňovou evidenci a daňovou optimalizaci.',
+  ogTitle: 'Účetní služby pro OSVČ a firmy Blansko a online | Martina Navrátilová',
+  ogDescription: 'Nabízím komplexní účetní služby pro OSVČ a právnické osoby v Blansku i online. Specializuji se na vedení účetnictví, daňovou evidenci a daňovou optimalizaci.',
   ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
   ogUrl: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
   canonical: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
