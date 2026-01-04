@@ -108,7 +108,7 @@ export default defineNuxtConfig({
   // Nastavení pro správné generování statických souborů pro Cloudflare Pages
   ssr: true,
   nitro: {
-    preset: 'static',
+    preset: 'cloudflare-pages',
     serveStatic: true,
     prerender: {
       crawlLinks: true,  // Enable automatic link crawling for better SEO
