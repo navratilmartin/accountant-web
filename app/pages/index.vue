@@ -2,7 +2,7 @@
   <div>
     <!-- Hero sekce -->
     <section id="home" class="relative h-[80vh] px-20 overflow-hidden bg-gradient-to-br from-white to-white-50">
-      <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-primary/20 to-primary-100 -z-10"></div>
+      <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-primary/5 to-primary-100 -z-10"></div>
       
       <!-- Dekorativní prvky -->
       <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 opacity-40">
@@ -50,7 +50,7 @@
                 <div class="text-sm text-gray-600">Let zkušeností</div>
               </div>
               <div class="text-center">
-                <div class="text-3xl font-bold text-primary mb-1">200+</div>
+                <div class="text-3xl font-bold text-primary mb-1">150+</div>
                 <div class="text-sm text-gray-600">Spokojených klientů</div>
               </div>
               <div class="text-center">
@@ -82,7 +82,7 @@
         <div class="text-center mb-16">
           <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-medium mb-4">Služby</span>
           <h2 class="text-2xl md:text-4xl font-bold mb-4">Jak vám mohu pomoci?</h2>
-          <p class="text-lg max-w-3xl mx-auto text-gray-600">Poskytuji komplexní účetní služby pro OSVČ. Od vedení účetnictví a daňové evidence až po optimalizaci daňových povinností.</p>
+          <p class="text-lg max-w-3xl mx-auto text-gray-600">Poskytnuji komplexní služby vedení účetnictví a daňové evidence pro OSVĆ a právnické osoby.</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -100,7 +100,7 @@
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-primary mt-1 mr-2 flex-shrink-0" />
-                  <span class="text-gray-600">Evidence majetku a závazků</span>
+                  <span class="text-gray-600">Zpracování mzdové a personání agendy</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-primary mt-1 mr-2 flex-shrink-0" />
@@ -140,26 +140,26 @@
           <ClientOnly>
             <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8 hover:shadow-lg transition-shadow">
               <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-lg mb-6">
-                <UIcon name="i-heroicons-document-text" class="text-primary text-3xl" />
+                <UIcon name="i-heroicons-building-office-2" class="text-primary text-3xl" />
               </div>
-              <h3 class="text-xl font-bold mb-4">Daňová přiznání</h3>
-              <p class="text-gray-600 mb-6">Zpracování všech typů daňových přiznání pro OSVČ a zajištění jejich včasného podání.</p>
+              <h3 class="text-xl font-bold mb-4">Zastupování na úřadech</h3>
+              <p class="text-gray-600 mb-6">Zajišťuji styk s veškerými úřady a institucemi spojenými s vaším podnikáním.</p>
               <ul class="space-y-2 mb-6">
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-primary mt-1 mr-2 flex-shrink-0" />
-                  <span class="text-gray-600">Daň z příjmu fyzických osob</span>
+                  <span class="text-gray-600">Finanční úřad</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-primary mt-1 mr-2 flex-shrink-0" />
-                  <span class="text-gray-600">Přiznání k DPH</span>
+                  <span class="text-gray-600">Správa sociálního zabezpečení</span>
                 </li>
                 <li class="flex items-start">
                   <UIcon name="i-heroicons-check" class="text-primary mt-1 mr-2 flex-shrink-0" />
-                  <span class="text-gray-600">Silniční daň a další</span>
+                  <span class="text-gray-600">Zdravotní pojišťovna</span>
                 </li>
               </ul>
               <UButton 
-                to="/ucetni-sluzby-osvc#dane" 
+                to="/ucetni-sluzby-osvc#zastupovani" 
                 color="primary" 
                 variant="ghost" 
                 size="sm" 
@@ -171,12 +171,12 @@
             <template #fallback>
               <div class="bg-white rounded-xl shadow-md border border-gray-100 p-8">
                 <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-lg mb-6">
-                  <UIcon name="i-heroicons-document-text" class="text-primary text-3xl" />
+                  <UIcon name="i-heroicons-building-office-2" class="text-primary text-3xl" />
                 </div>
-                <h3 class="text-xl font-bold mb-4">Daňová přiznání</h3>
-                <p class="text-gray-600 mb-6">Zpracování všech typů daňových přiznání pro OSVČ a zajištění jejich včasného podání.</p>
+                <h3 class="text-xl font-bold mb-4">Zastupování na úřadech</h3>
+                <p class="text-gray-600 mb-6">Zajišťuji styk s veškerými úřady a institucemi spojenými s vaším podnikáním.</p>
                 <UButton 
-                  to="/ucetni-sluzby-osvc#dane" 
+                  to="/ucetni-sluzby-osvc#zastupovani" 
                   color="primary" 
                   variant="ghost" 
                   size="sm" 
@@ -343,7 +343,7 @@
               <UButton 
                 to="/ucetni-sluzby-osvc" 
                 color="primary"
-                class="text-white"
+                class="text-white transition-transform duration-300 ease-in-out hover:-translate-y-1"
               >
                 <UIcon name="i-heroicons-document-text" class="mr-2" />
                 Moje služby
@@ -634,6 +634,7 @@ useSeoMeta({
   description: 'Hledáte spolehlivé účetnictví pro OSVČ v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňová přiznání a poradenství. Zajistěte si klid a ušetřete čas. Kontaktujte mě pro nezávaznou konzultaci.',
   ogTitle: 'Účetnictví pro OSVČ Blansko a online | Martina Navrátilová',
   ogDescription: 'Hledáte spolehlivé účetnictví pro OSVČ v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňová přiznání a poradenství. Zajistěte si klid a ušetřete čas. Kontaktujte mě pro nezávaznou konzultaci.',
+  ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
   ogUrl: 'https://ucetni-blansko.cz',
   canonical: 'https://ucetni-blansko.cz',
 })
