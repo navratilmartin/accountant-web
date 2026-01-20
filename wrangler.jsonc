@@ -7,6 +7,7 @@
   },
   "vars": {
     "EMAIL_RECIPIENT": "navratilova@ucetni-blansko.cz",
-    "EMAIL_USER": "konrakt@ucetni-blansko.cz"
+    "EMAIL_USER": "kontakt@ucetni-blansko.cz",
+    "RESEND_API_KEY": ""
   }
 }
