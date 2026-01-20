@@ -1,9 +1,11 @@
 {
-    "name": "accountant-web",
-    "compatibility_date": "2025-04-13",
-    "main": "workers-site/index.js",
-    "site": {
-      "bucket": "./.output/public"
-    }
+  "name": "accountant-web",
+  "compatibility_date": "2025-04-13",
+  "main": "workers-site/index.js",
+  "site": {
+    "bucket": "./.output/public"
+  },
+  "vars": {
+    "EMAIL_RECIPIENT": "navratilova@ucetni-blansko.cz"
   }
-  
+}

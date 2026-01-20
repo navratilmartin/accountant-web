@@ -801,50 +801,67 @@ const form = ref({
 const submitForm = async () => {
   // Validace
   if (!form.value.name || !form.value.email || !form.value.message || !form.value.consent) {
-    form.value.error = true;
-    return;
+    console.warn('Formulář: chybí povinné údaje', { 
+      name: !!form.value.name, 
+      email: !!form.value.email, 
+      message: !!form.value.message, 
+      consent: form.value.consent 
+    })
+    form.value.error = true
+    return
   }
   
-  form.value.loading = true;
-  form.value.error = false;
+  form.value.loading = true
+  form.value.error = false
+  form.value.success = false
+  
+  console.log('Odesílám formulář...')
   
   try {
     // Reálné odeslání formuláře na server
-    const response = await $fetch('/api/contact', {
+    const response = await fetch('/api/contact', {
       method: 'POST',
-      body: {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
         name: form.value.name,
         email: form.value.email,
         phone: form.value.phone,
         message: form.value.message
-      }
-    });
+      })
+    })
+    
+    console.log('Response status:', response.status)
+    
+    const data = await response.json()
+    console.log('Response data:', data)
     
     // Zpracování odpovědi
-    if (!response || response.statusCode !== 200) {
-      throw new Error('Došlo k chybě při odesílání zprávy');
+    if (!response.ok || data.statusCode !== 200) {
+      throw new Error(data.message || 'Došlo k chybě při odesílání zprávy')
     }
     
-    form.value.success = true;
+    form.value.success = true
     
     // Reset formuláře
-    form.value.name = '';
-    form.value.email = '';
-    form.value.phone = '';
-    form.value.message = '';
-    form.value.consent = false;
+    form.value.name = ''
+    form.value.email = ''
+    form.value.phone = ''
+    form.value.message = ''
+    form.value.consent = false
     
     // Reset success zprávy po 5 sekundách
     setTimeout(() => {
-      form.value.success = false;
-    }, 5000);
+      form.value.success = false
+    }, 5000)
   } catch (error) {
-    console.error('Chyba při odesílání formuláře:', error);
-    form.value.error = true;
+    console.error('Chyba při odesílání formuláře:', error)
+    form.value.error = true
   } finally {
-    form.value.loading = false;
+    form.value.loading = false
   }
-};
+}
 
 const activeTab = ref('ucetnictvi');
 </script>
