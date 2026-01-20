@@ -6,6 +6,7 @@
     "bucket": "./.output/public"
   },
   "vars": {
-    "EMAIL_RECIPIENT": "navratilova@ucetni-blansko.cz"
+    "EMAIL_RECIPIENT": "navratilova@ucetni-blansko.cz",
+    "EMAIL_USER": "konrakt@ucetni-blansko.cz"
   }
 }
