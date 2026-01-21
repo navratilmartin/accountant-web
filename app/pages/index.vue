@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero sekce -->
-    <section id="home" class="relative h-[80vh] px-20 overflow-hidden bg-gradient-to-br from-white to-white-50">
+    <section id="home" class="relative px-4 sm:px-8 md:px-12 lg:px-20 py-16 md:py-24 overflow-hidden bg-gradient-to-br from-white to-white-50">
       <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-primary/5 to-primary-100 -z-10"></div>
       
       <!-- Dekorativní prvky -->
@@ -11,21 +11,21 @@
         <div class="absolute bottom-24 right-48 w-64 h-64 rounded-full bg-blue-200/40 filter blur-3xl"></div>
       </div>
       
-      <div class="container-custom relative z-10 h-full flex flex-col items-center justify-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="container-custom relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
           <div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
               Účetnictví pro OSVČ a firmy v <span class="text-primary">Blansku</span> i celé ČR online
             </h1>
-            <p class="text-lg md:text-xl text-gray-700 mb-8">
+            <p class="text-base sm:text-lg md:text-xl text-gray-700 mb-6 md:mb-8">
               Profesionální vedení účetnictví a daňové poradenství pro OSVČ a právnické osoby. Soustřeďte se na své podnikání, o papírování se postarám za vás.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
               <UButton 
                 to="#kontakt" 
                 color="primary"
                 size="xl"
-                class="shadow-md text-white px-3 py-3 rounded-lg
+                class="shadow-md text-white px-3 py-3 rounded-lg w-full sm:w-auto
                 transition-transform duration-300 ease-in-out hover:-translate-y-1"
               >
                 <UIcon name="i-heroicons-envelope" class="mr-2" />
@@ -35,7 +35,7 @@
                 to="/ucetni-sluzby-osvc" 
                 variant="outline"
                 size="xl"
-                class="shadow-md bg-white text-primary px-3 py-3 rounded-lg
+                class="shadow-md bg-white text-primary px-3 py-3 rounded-lg w-full sm:w-auto
                 transition-transform duration-300 ease-in-out hover:-translate-y-1"
               >
                 <UIcon name="i-heroicons-information-circle" class="mr-2" />
@@ -44,18 +44,18 @@
             </div>
             
             <!-- Statistiky / Trust badges -->
-            <div class="grid grid-cols-3 gap-4 mt-12 max-w-xl">
+            <div class="grid grid-cols-3 gap-3 md:gap-4 mt-8 md:mt-12 max-w-xl">
               <div class="text-center">
-                <div class="text-3xl font-bold text-primary mb-1">30+</div>
-                <div class="text-sm text-gray-600">Let zkušeností</div>
+                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">30+</div>
+                <div class="text-xs md:text-sm text-gray-600">Let zkušeností</div>
               </div>
               <div class="text-center">
-                <div class="text-3xl font-bold text-primary mb-1">150+</div>
-                <div class="text-sm text-gray-600">Spokojených klientů</div>
+                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">150+</div>
+                <div class="text-xs md:text-sm text-gray-600">Spokojených klientů</div>
               </div>
               <div class="text-center">
-                <div class="text-3xl font-bold text-primary mb-1">10 000+</div>
-                <div class="text-sm text-gray-600">Zaúčtovaných dokladů</div>
+                <div class="text-2xl md:text-3xl font-bold text-primary mb-1">10 000+</div>
+                <div class="text-xs md:text-sm text-gray-600">Zaúčtovaných dokladů</div>
               </div>
             </div>
           </div>
@@ -601,9 +601,9 @@
               
               <button 
                 type="submit" 
-                class="w-full py-3 px-6 rounded-lg bg-white text-primary font-medium hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/30 transition-colors flex items-center justify-center"
+                class="w-full py-3 px-6 rounded-lg bg-white text-primary font-medium hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/30 transition-all flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white"
                 :class="{'opacity-75': form.loading}"
-                :disabled="form.loading"
+                :disabled="contactButtonDisabled"
               >
                 <UIcon v-if="!form.loading" name="i-heroicons-paper-airplane" class="mr-2" />
                 <UIcon v-else name="i-heroicons-arrow-path" class="mr-2 animate-spin" />
@@ -628,6 +628,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { featuredTestimonial, testimonials } from '~/data/testimonials'
+
+const toast = useToast()
 
 useSeoMeta({
   title: 'Účetnictví Blansko a online | Martina Navrátilová',
@@ -734,58 +737,6 @@ useHead({
   ]
 })
 
-const featuredTestimonial = {
-  name: 'Yasmin May',
-  role: 'Podnikatelka v oblasti sociálních sítí',
-  quote: 'Spolupráce s paní Navrátilovou je naprosto bezproblémová. Oceňuji její profesionalitu, odbornost a rychlou komunikaci. Díky jejím radám jsem optimalizovala své daňové povinnosti a ušetřila nejen čas, ale i značné peníze. Můžu se konečně plně věnovat svému podnikání a hodit starosti s účetnictvím za hlavu.',
-  rating: 5,
-  avatar: '/img/yasmin-may.webp',
-  yearStarted: '2022'
-}
-
-const testimonials = [
-  {
-    name: 'Peter Kolínek',
-    role: 'Řemeslník',
-    quote: 'Přechod od předchozí účetní byl hladký a bezproblémový. Oceňuji profesionální a vstřícný přístup, přehledné výkazy a pravidelné konzultace. Díky paní Navrátilové mám konečně přehled o svých financích a můžu se plně soustředit na svou práci.',
-    rating: 5,
-    avatar: '/img/peter-kolinek.webp'
-  },
-  {
-    name: 'Marek Dvořák',
-    role: 'Webový vývojář',
-    quote: 'Jako začínající podnikatel jsem potřeboval někoho, kdo mi pomůže zorientovat se v účetnictví a daňových povinnostech. Paní Navrátilová mi vše trpělivě vysvětlila a nastavila systém, který mi perfektně vyhovuje. Výborná volba pro každého OSVČ!',
-    rating: 5,
-    avatar: '/img/face1.webp'
-  },
-  {
-    name: 'Martin Horák',
-    role: 'Architekt',
-    quote: 'Oceňuji především rychlou odezvu na všechny mé dotazy a velmi vstřícný přístup při řešení nestandardních situací. Díky profesionálním radám a daňové optimalizaci jsem ušetřil nemalé prostředky, které mohu investovat zpět do svého podnikání.',
-    rating: 5,
-    avatar: '/img/face3.webp'
-
-  },
-  {
-    name: 'Lucie Černá',
-    role: 'Copywriterka & obsahová stratégka',
-    quote: 'Spolupracuji s paní Navrátilovou již třetím rokem a jsem maximálně spokojená. Vždy dodržuje termíny, je nesmírně pečlivá a její rady mi ušetřily mnoho času i peněz. Účetnictví už pro mě není stres, ale hladce fungující zázemí.',
-    rating: 5,
-    avatar: '/img/face6.webp'
-  },
-  {
-    name: 'David Svoboda',
-    role: 'Fotograf',
-    quote: 'Paní Navrátilová mi pomohla s digitalizací účetnictví a teď mám v dokladech naprostý pořádek. Oceňuji přechod na přehledný systém, který mi šetří spoustu času. Konečně se můžu naplno věnovat kreativní práci místo administrativy.',    rating: 5,
-    avatar: '/img/face4.webp'
-  },
-  {
-    name: 'Eva Vlčková',
-    role: 'Marketingová konzultantka',
-    quote: 'Oceňuji proaktivní přístup paní Navrátilové a její hluboké znalosti daňové problematiky. Pomohla mi nejen optimalizovat daně, ale také nastavit efektivní cash flow. Je pro mě spolehlivým partnerem v růstu mého podnikání.',    rating: 5,
-    avatar: '/img/face2.webp'
-  }
-]
 
 const form = ref({
   name: '',
@@ -797,6 +748,10 @@ const form = ref({
   success: false,
   error: false
 });
+
+const contactButtonDisabled = computed(() => {
+  return form.value.loading || !form.value.consent || !form.value.name || !form.value.phone || !form.value.email
+})
 
 const submitForm = async () => {
   // Validace
@@ -815,7 +770,6 @@ const submitForm = async () => {
   form.value.error = false
   form.value.success = false
   
-  console.log('Odesílám formulář...')
   
   try {
     // Reálné odeslání formuláře na server
@@ -832,10 +786,7 @@ const submitForm = async () => {
       })
     })
     
-    console.log('Response status:', response.status)
-    
     const data = await response.json()
-    console.log('Response data:', data)
     
     // Zpracování odpovědi
     if (!response.ok || data.statusCode !== 200) {
@@ -850,13 +801,24 @@ const submitForm = async () => {
     form.value.phone = ''
     form.value.message = ''
     form.value.consent = false
-    
+
     // Reset success zprávy po 5 sekundách
     setTimeout(() => {
       form.value.success = false
     }, 5000)
+    
+    toast.add({
+      title: 'Úspěšně odesláno',
+      description: 'Děkuji za vaši zprávu. Ozvu se vám co nejdříve.',
+      color: 'success'
+    })
   } catch (error) {
     console.error('Chyba při odesílání formuláře:', error)
+    toast.add({
+      title: 'Nepodařilo se poslat zprávu',
+      description: 'Při odeslání zprávy nastala chyba. Zkuste to prosím znovu nebo mě kontaktujte přímo e-mailem.',
+      color: 'error'
+    })
     form.value.error = true
   } finally {
     form.value.loading = false
