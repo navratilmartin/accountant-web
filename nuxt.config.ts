@@ -39,6 +39,7 @@ export default defineNuxtConfig({
     '~/assets/css/main.css'
   ],
   image: {
+    provider: 'ipx',
     quality: 80,
     format: ['webp']
   },
