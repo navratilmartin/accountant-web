@@ -317,11 +317,11 @@
 import { featuredTestimonial, testimonials } from '~/data/testimonials'
 
 useSeoMeta({
-  title: 'Reference | Účetnictví pro OSVČ a firmy Blansko | Martina Navrátilová',
+  title: 'Reference | Účetnictví Blansko a online | Martina Navrátilová',
   description: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ a právnické osoby, daňové poradenství a vedení účetnictví.',
-  ogTitle: 'Reference | Účetnictví pro OSVČ a firmy Blansko | Martina Navrátilová',
+  ogTitle: 'Reference | Účetnictví Blansko a online | Martina Navrátilová',
   ogDescription: 'Přečtěte si reference mých klientů z Blanska a celé ČR. Poskytuji spolehlivé účetní služby pro OSVČ a právnické osoby, daňové poradenství a vedení účetnictví.',
-  ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
+  ogImage: 'https://ucetni-blansko.cz/img/og-portrait.webp',
   ogUrl: 'https://ucetni-blansko.cz/reference-klientu',
   canonical: 'https://ucetni-blansko.cz/reference-klientu',
 });

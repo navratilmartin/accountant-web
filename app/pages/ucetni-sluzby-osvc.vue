@@ -542,11 +542,11 @@
 import { onMounted } from 'vue';
 
 useSeoMeta({
-  title: 'Účetní služby pro OSVČ a firmy Blansko a online | Martina Navrátilová',
+  title: 'Účetní služby Blansko a online | Martina Navrátilová',
   description: 'Nabízím komplexní účetní služby pro OSVČ a právnické osoby v Blansku i online. Specializuji se na vedení účetnictví, daňovou evidenci a daňovou optimalizaci.',
-  ogTitle: 'Účetní služby pro OSVČ a firmy Blansko a online | Martina Navrátilová',
+  ogTitle: 'Účetní služby Blansko a online | Martina Navrátilová',
   ogDescription: 'Nabízím komplexní účetní služby pro OSVČ a právnické osoby v Blansku i online. Specializuji se na vedení účetnictví, daňovou evidenci a daňovou optimalizaci.',
-  ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
+  ogImage: 'https://ucetni-blansko.cz/img/og-portrait.webp',
   ogUrl: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
   canonical: 'https://ucetni-blansko.cz/ucetni-sluzby-osvc',
 });

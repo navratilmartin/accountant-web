@@ -635,9 +635,9 @@ const toast = useToast()
 useSeoMeta({
   title: 'Účetnictví Blansko a online | Martina Navrátilová',
   description: 'Hledáte spolehlivé účetnictví pro OSVČ nebo právnické osoby v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňovou evidenci a odborné poradenství. Zajistěte si klid a ušetřete čas.',
-  ogTitle: 'Účetnictví pro OSVČ a firmy Blansko a online | Martina Navrátilová',
+  ogTitle: 'Účetnictví Blansko a online | Martina Navrátilová',
   ogDescription: 'Hledáte spolehlivé účetnictví pro OSVČ nebo právnické osoby v Blansku nebo online? Nabízím kompletní vedení účetnictví, daňovou evidenci a odborné poradenství. Zajistěte si klid a ušetřete čas.',
-  ogImage: 'https://ucetni-blansko.cz/img/og-image.webp',
+  ogImage: 'https://ucetni-blansko.cz/img/og-portrait.webp',
   ogUrl: 'https://ucetni-blansko.cz',
   canonical: 'https://ucetni-blansko.cz',
 })
